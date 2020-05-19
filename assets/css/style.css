@@ -25,7 +25,6 @@ footer {
   width: 100vw;
   display: flex;
   justify-content: center;
-  margin-top: 50px;
 }
 
 footer p {
@@ -153,6 +152,7 @@ label {
 .fas {
   display: flex;
   font: normal normal normal 40px/1 FontAwesome;
+  justify-content: center;
   height: 60px;
   width: 60px;
   padding: 8px 10px 10px 10px;
