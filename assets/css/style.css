@@ -1,12 +1,17 @@
-/************ STYLING FOR ALL PAGES ************/
+/***************** STYLING FOR ALL PAGES *****************/
 
 body {
   height: 100vh;
-  background-color: rgba(173, 187, 212, 0.5);
+  background-color: rgba(173, 187, 212, 0);
+  /* background-image: url("../imgs/inkmountains.jpg"); */
   background-repeat: round;
   font-family: "Montserrat", sans-serif; /*** font ***/
   color: rgb(124, 125, 134);
   font-size: 16px;
+}
+
+html {
+  background-image: url("../imgs/inkmountains.jpg");
 }
 
 h1 {
@@ -46,6 +51,7 @@ footer p {
   background-color: rgba(255, 255, 255, 0);
   color: rgb(89, 90, 109);
   margin: 20px;
+  letter-spacing: px;
 }
 .row {
   display: flex;
@@ -62,12 +68,6 @@ footer p {
   /* border: 5px solid rgba(121, 235, 255, 0.247);
   border-radius: 15px;
   background-color: rgba(145, 251, 255, 0.171); */
-}
-
-img {
-  float: left;
-  max-width: 200px;
-  margin: 0px 20px 0px 0px;
 }
 
 /* media queries for nav bar @ xs and sm */
@@ -89,4 +89,87 @@ img {
   }
 }
 
-/************ END STYLING FOR ALL PAGES ************/
+/* media queries for page @ xs */
+@media only screen and (max-width: 575px) {
+  .container,
+  .col {
+    margin-right: 0px;
+    margin-left: 0px;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+
+  .socialmed {
+    padding: 10px;
+  }
+}
+
+/***************** END STYLING FOR ALL PAGES *****************/
+
+/**************** START STYLING FOR PORTFOLIO ****************/
+
+.portfolio-img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  background-color: rgba(204, 204, 218, 0.5);
+  border-radius: 20px;
+  border: 2px solid rgb(255, 92, 92);
+}
+/***************** END STYLING FOR PORTFOLIO *****************/
+
+/***************** START STYLING FOR ABOUT ME ****************/
+
+#about-me-img {
+  float: left;
+  max-width: 200px;
+  margin: 0px 20px 0px 0px;
+}
+/****************** END STYLING FOR ABOUT ME *****************/
+
+/***************** START STYLING FOR CONTACT ME **************/
+
+/******* Form *******/
+form {
+  background-color: rgba(204, 204, 218, 0.5);
+  width: 100%;
+  padding: 40px;
+  border-radius: 20px;
+  border: 2px solid rgb(255, 92, 92);
+  min-width: 350px;
+}
+
+.btn-primary {
+  background-color: rgba(255, 92, 92, 0.5);
+  border-color: rgb(255, 92, 92);
+}
+
+label {
+  color: rgb(70, 70, 70);
+}
+
+/******* Socials *******/
+.fab,
+.fas {
+  display: flex;
+  font: normal normal normal 40px/1 FontAwesome;
+  height: 60px;
+  width: 60px;
+  padding: 8px 10px 10px 10px;
+  border: 2px solid rgb(255, 92, 92);
+  border-color: rgb(255, 92, 92);
+  border-radius: 10px;
+  background-color: rgba(139, 139, 150, 0.5);
+  color: white;
+}
+
+.socialslink:hover {
+  text-decoration: none;
+}
+
+#socials-div {
+  display: flex;
+  align-items: flex-start;
+}
+
+/***************** END STYLING FOR CONTACT ME ****************/
