@@ -109,7 +109,6 @@ footer p {
 
 .portfolio-img {
   width: 100%;
-  max-width: 300px;
   height: auto;
   background-color: rgba(204, 204, 218, 0.5);
   border-radius: 20px;
