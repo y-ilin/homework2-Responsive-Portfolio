@@ -108,8 +108,11 @@ footer p {
 /**************** START STYLING FOR PORTFOLIO ****************/
 
 .portfolio-img {
-  width: 100%;
-  height: auto;
+  /* width: 100%;
+  height: auto; */
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
   background-color: rgba(109, 95, 89, 0.219);
   border-radius: 20px;
   border: 2px solid rgb(255, 92, 92);
