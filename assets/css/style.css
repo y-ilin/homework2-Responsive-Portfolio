@@ -1,16 +1,17 @@
 /***************** STYLING FOR ALL PAGES *****************/
 
 body {
-  height: 100vh;
-  background-color: rgba(173, 187, 212, 0);
-  background-repeat: round;
-  font-family: "Montserrat", sans-serif; /*** font ***/
-  color: rgb(124, 125, 134);
+  height: 100%;
+  background-color: rgba(39, 39, 39, 0);
+  font-family: "Montserrat", sans-serif;
+  color: rgb(180, 165, 165);
   font-size: 16px;
 }
 
 html {
-  background-image: url("../imgs/architecture.jpg");
+  background-image: url("../imgs/devin-avery-LA-edited.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 h1 {
@@ -33,7 +34,7 @@ footer p {
 
 /******* Nav bar *******/
 .navbar {
-  background-color: rgba(109, 95, 89, 0.2) !important;
+  background-color: rgba(158, 99, 74, 0.2) !important;
   padding: 20px 30px 5px 30px;
 }
 
@@ -47,8 +48,7 @@ footer p {
   font-size: 50px;
   border: none;
   background-color: rgba(255, 255, 255, 0);
-  /* color: rgb(89, 90, 109); */
-  color: rgb(109, 95, 89);
+  color: rgb(214, 194, 186);
   margin: 20px;
   letter-spacing: px;
 }
@@ -64,9 +64,6 @@ footer p {
   justify-content: center;
   margin: 0px;
   padding: 10px;
-  /* border: 5px solid rgba(121, 235, 255, 0.247);
-  border-radius: 15px;
-  background-color: rgba(145, 251, 255, 0.171); */
 }
 
 /* media queries for nav bar @ xs and sm */
@@ -105,31 +102,37 @@ footer p {
 
 /***************** END STYLING FOR ALL PAGES *****************/
 
-/**************** START STYLING FOR PORTFOLIO ****************/
+/************************* PORTFOLIO *************************/
 
 .portfolio-img {
-  /* width: 100%;
-  height: auto; */
-  width: 250px;
-  height: 250px;
+  height: auto;
+  width: 100%;
   object-fit: cover;
   background-color: rgba(109, 95, 89, 0.219);
-  border-radius: 20px;
-  border: 2px solid rgb(255, 92, 92);
+  border-radius: 5px;
+  /* border: 2px solid rgb(202, 80, 43); */
+  border: 10px solid rgba(230, 175, 103, 0.4);
 }
 
 /***************** END STYLING FOR PORTFOLIO *****************/
 
-/***************** START STYLING FOR ABOUT ME ****************/
+/************************* ABOUT ME *************************/
 
 #about-me-img {
   float: left;
   max-width: 200px;
   margin: 0px 20px 0px 0px;
 }
+
+#aboutMeDesc {
+  background-color: rgba(59, 53, 45, 0.6);
+  padding: 20px;
+  font-size: 18px;
+}
+
 /****************** END STYLING FOR ABOUT ME *****************/
 
-/***************** START STYLING FOR CONTACT ME **************/
+/************************* CONTACT ME ************************/
 
 /******* Form *******/
 form {
