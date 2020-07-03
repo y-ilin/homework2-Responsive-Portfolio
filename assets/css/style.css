@@ -202,10 +202,6 @@ footer p {
   }
 }
 
-/* media queries for page @ sm */
-@media only screen and (min-width: 576px) and (max-width: 767px) {
-}
-
 /***************** END STYLING FOR ALL PAGES *****************/
 
 /*************************************************************/
@@ -243,12 +239,27 @@ footer p {
   text-shadow: 1px 1px rgb(111, 149, 255);
 }
 
-@media only screen and (max-width: 375px) {
+/* media queries for page @ xs */
+@media only screen and (max-width: 575px) {
+  #aboutMeImg {
+    max-width: 150px;
+  }
   #aboutMeDesc {
-    font-size: 12px;
+    font-size: 11px;
   }
   .accentText {
     font-size: 14px;
+  }
+}
+
+/* media queries for page @ sm */
+@media only screen and (max-width: 767px) {
+  #aboutMeDesc {
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  .accentText {
+    font-size: 16px;
   }
 }
 
