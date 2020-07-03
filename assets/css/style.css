@@ -20,6 +20,7 @@ body {
 
 video {
   position: fixed;
+  min-width: 100%;
 }
 
 .myName {
@@ -42,11 +43,13 @@ footer p {
 
 /***************** Nav bar *****************/
 .navbar {
-  background-color: rgba(73, 64, 51, 0.8) !important;
+  background-color: rgba(232, 255, 250, 0.2) !important;
+  border: 1px solid rgb(142, 255, 230);
+  margin: 5px;
   padding: 20px 30px 5px 30px;
   position: fixed;
   top: 0;
-  width: 100%;
+  width: 99%;
   z-index: 1;
 }
 
@@ -228,15 +231,16 @@ footer p {
 }
 
 #aboutMeDesc {
-  background-color: rgba(59, 53, 45, 0.85);
+  background-color: rgba(232, 255, 250, 0.2) !important;
+  border: 1px solid rgb(142, 255, 230);
   padding: 20px;
   font-size: 18px;
 }
 
 .accentText {
-  color: rgb(185, 80, 255);
+  color: rgb(148, 255, 138);
   font-size: 20px;
-  text-shadow: 1px 1px rgb(111, 149, 255);
+  text-shadow: 1px 1px rgb(29, 42, 80);
 }
 
 /* media queries for page @ xs */
