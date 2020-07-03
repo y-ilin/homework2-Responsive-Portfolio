@@ -26,23 +26,49 @@
   <body>
     <!-- Nav bar -->
     <nav class="navbar navbar-expand-md navbar-light bg-light">
-      <h1>YI LIN LEE</h1>
+      <h1 class="myName">YI LIN LEE</h1>
+      <!-- Socials -->
+      <div class="navbar-nav" id="socialsDiv">
+        <a href="https://github.com/y-ilin" target="blank" class="socialslink"
+          ><i class="fab fa-github"></i
+        ></a>
+        <a
+          href="https://www.linkedin.com/in/yi-lin-lee/"
+          target="blank"
+          class="socialslink"
+          ><i class="fab fa-linkedin"></i
+        ></a>
+        <a href="mailto:yilinlee19@gmail.com" target="blank" class="socialslink"
+          ><i class="fas fa-envelope"></i
+        ></a>
+      </div>
+      <!-- Navigate pages -->
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
           <a class="nav-item nav-link" href="./portfolio.html">Portfolio</a>
-          <!-- <a class="nav-item nav-link" href="./contact.html">Contact</a> -->
-          <a class="nav-item nav-link active" href="./index.html">About</a>
+          <a class="nav-item nav-link active" href="./index.html"
+            >More on me!</a
+          >
         </div>
       </div>
     </nav>
 
+    <!-- Background video -->
+    <video
+      playsinline="playsinline"
+      autoplay="autoplay"
+      muted="muted"
+      loop="loop"
+    >
+      <source src="./assets/imgs/backgroundvideo.mp4" type="video/mp4" />
+    </video>
+
     <!-- Start of Container -->
     <main class="container">
       <div class="row">
-        <div class="col col-12 col-lg-8" id="pageTitle">About Me</div>
+        <div class="col col-12 col-lg-8" id="pageTitle">This is me!</div>
       </div>
       <div class="row">
-        <div class="col col-12 col-lg-2" id="bufferDiv"></div>
         <div class="col-12 col-lg-8" id="aboutMeDesc">
           <img
             src="./assets/imgs/yilin.jpg"
@@ -68,36 +94,6 @@
             my <span class="accentText">passion for problem-solving</span>
             in web development and I'm having a sick time so far!
           </p>
-        </div>
-
-        <!-- Socials -->
-        <div class="col col-12 col-lg-2" id="socialsDiv">
-          <div class="row">
-            <div class="col col-4 col-lg-12 socialmed">
-              <a
-                href="https://github.com/y-ilin"
-                target="blank"
-                class="socialslink"
-                ><i class="fab fa-github"></i
-              ></a>
-            </div>
-            <div class="col col-4 col-lg-12 socialmed">
-              <a
-                href="https://www.linkedin.com/in/yi-lin-lee/"
-                target="blank"
-                class="socialslink"
-                ><i class="fab fa-linkedin"></i
-              ></a>
-            </div>
-            <div class="col col-4 col-lg-12 socialmed">
-              <a
-                href="mailto:yilinlee19@gmail.com"
-                target="blank"
-                class="socialslink"
-                ><i class="fas fa-envelope"></i
-              ></a>
-            </div>
-          </div>
         </div>
       </div>
     </main>

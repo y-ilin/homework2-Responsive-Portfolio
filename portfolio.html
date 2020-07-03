@@ -26,17 +26,43 @@
   <body>
     <!-- Nav bar -->
     <nav class="navbar navbar-expand-md navbar-light bg-light">
-      <h1>YI LIN LEE</h1>
+      <h1 class="myName">YI LIN LEE</h1>
+      <!-- Socials -->
+      <div class="navbar-nav" id="socialsDiv">
+        <a href="https://github.com/y-ilin" target="blank" class="socialslink"
+          ><i class="fab fa-github"></i
+        ></a>
+        <a
+          href="https://www.linkedin.com/in/yi-lin-lee/"
+          target="blank"
+          class="socialslink"
+          ><i class="fab fa-linkedin"></i
+        ></a>
+        <a href="mailto:yilinlee19@gmail.com" target="blank" class="socialslink"
+          ><i class="fas fa-envelope"></i
+        ></a>
+      </div>
+      <!-- Navigate pages -->
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
-          <a class="nav-item nav-link active" href="./portfolio.html"
-            >Portfolio</a
+          <a class="nav-item nav-link" href="./portfolio.html">Portfolio</a>
+          <a class="nav-item nav-link active" href="./index.html"
+            >More on me!</a
           >
-          <!-- <a class="nav-item nav-link" href="./contact.html">Contact</a> -->
-          <a class="nav-item nav-link" href="./index.html">About</a>
         </div>
       </div>
     </nav>
+
+    <!-- Background video -->
+    <video
+      playsinline="playsinline"
+      autoplay="autoplay"
+      muted="muted"
+      loop="loop"
+      id="portfolioBackgroundVid"
+    >
+      <source src="./assets/imgs/backgroundvideo.mp4" type="video/mp4" />
+    </video>
 
     <!-- Start of Container -->
     <main class="container" id="portfolioContainer">
@@ -51,7 +77,7 @@
           >
             <img
               src="./assets/imgs/WeatherDashboard.png"
-              alt="Password Generator app screenshot"
+              alt="Weather Dashboard app screenshot"
               class="portfolioImg"
           /></a>
         </div>
@@ -72,8 +98,8 @@
             target="blank"
           >
             <img
-              src="./assets/imgs/PasswordGenerator.png"
-              alt="Password Generator app screenshot"
+              src="./assets/imgs/PersonalFitnessPlanner.png"
+              alt="Personal Fitness Planner app screenshot"
               class="portfolioImg"
           /></a>
         </div>

@@ -1,20 +1,28 @@
+/*************************************************************/
 /***************** STYLING FOR ALL PAGES *****************/
+/*************************************************************/
 
 body {
   height: 100%;
   background-color: rgba(39, 39, 39, 0);
   font-family: "Montserrat", sans-serif;
-  color: rgb(180, 165, 165);
+  color: white;
   font-size: 16px;
+  position: relative;
+  z-index: 2;
 }
 
-html {
+/* html {
   background-image: url("../imgs/devin-avery-LA-edited2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+} */
+
+video {
+  position: fixed;
 }
 
-h1 {
+.myName {
   font-weight: 200;
   font-size: 40px;
 }
@@ -32,32 +40,132 @@ footer p {
   bottom: 10px;
 }
 
-/******* Nav bar *******/
+/***************** Nav bar *****************/
 .navbar {
-  background-color: rgba(105, 95, 81, 0.8) !important;
+  background-color: rgba(73, 64, 51, 0.8) !important;
   padding: 20px 30px 5px 30px;
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 1;
 }
 
 .navbar-collapse {
-  margin-left: 30px;
+  justify-content: flex-end;
 }
 
+.navbar-light .navbar-nav .nav-link {
+  color: white;
+}
 .navbar-light .navbar-nav .nav-link.active {
-  color: rgb(214, 194, 186);
+  color: rgb(92, 222, 255);
 }
 
-/****** Container ******/
+/******* Socials *******/
+.fab,
+.fas {
+  display: flex;
+  font: normal normal normal 25px/1 FontAwesome;
+  justify-content: center;
+  height: 40px;
+  width: 40px;
+  padding: 5px 10px 10px 10px;
+  border: 2px solid rgb(111, 255, 200);
+  border-radius: 10px;
+  background-color: rgba(109, 95, 89, 0.5);
+  color: white;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.socialslink:hover {
+  text-decoration: none;
+}
+#socialsDiv {
+  display: flex;
+  align-items: flex-start;
+  margin: 0px 20px;
+}
+.socialslink {
+  margin: 0px 10px 10px 0px;
+}
+
+/* media queries for nav bar @ xs */
+@media only screen and (max-width: 575px) {
+  .myName {
+    font-size: 20px;
+  }
+  .navbar-nav {
+    flex-direction: row;
+  }
+  #socialsDiv {
+    margin: 0px;
+  }
+  .fab,
+  .fas {
+    display: flex;
+    font: normal normal normal 15px/1 FontAwesome;
+    justify-content: center;
+    height: 30px;
+    width: 30px;
+    padding: 5px 10px 10px 10px;
+    border: 2px solid rgb(111, 255, 200);
+    border-radius: 10px;
+    background-color: rgba(109, 95, 89, 0.5);
+    color: white;
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  #navbarNavAltMarkup {
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+  }
+  .navbar-nav .nav-link {
+    padding: 0rem 0.5rem;
+  }
+}
+/* media queries for nav bar @ sm */
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .navbar {
+    display: flex;
+    justify-content: center;
+  }
+  .collapse {
+    display: flex;
+    justify-content: center;
+  }
+  .navbar-nav {
+    flex-direction: row;
+  }
+  .navbar-nav .nav-link {
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+  }
+  .myName {
+    font-size: 30px;
+  }
+  .fab,
+  .fas {
+    display: flex;
+    font: normal normal normal 20px/1 FontAwesome;
+    justify-content: center;
+    height: 35px;
+    width: 35px;
+    padding: 5px 10px 10px 10px;
+    border: 2px solid rgb(111, 255, 200);
+    border-radius: 10px;
+    background-color: rgba(109, 95, 89, 0.5);
+    color: white;
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+}
+
+/***************** Container *****************/
 
 #pageTitle {
   font-size: 50px;
   border: none;
   background-color: rgba(255, 255, 255, 0);
-  color: rgb(214, 194, 186);
-  margin: 100px 0px 20px 0px;
-  letter-spacing: px;
+  color: white;
+  margin: 130px 0px 20px 0px;
 }
 .row {
   display: flex;
@@ -79,43 +187,30 @@ footer p {
   }
 }
 
-/* media queries for nav bar @ xs and sm */
-@media only screen and (max-width: 767px) {
-  .navbar {
-    display: flex;
-    justify-content: center;
-  }
-  .collapse {
-    display: flex;
-    justify-content: center;
-  }
-  .navbar-nav {
-    flex-direction: row;
-  }
-  .navbar-nav .nav-link {
-    padding-right: 0.5rem;
-    padding-left: 0.5rem;
-  }
-}
-
 /* media queries for page @ xs */
 @media only screen and (max-width: 575px) {
   .container,
   .col {
-    margin-right: 0px;
-    margin-left: 0px;
-    padding-right: 0px;
-    padding-left: 0px;
+    margin-right: 2px;
+    margin-left: 2px;
+    padding-right: 2px;
+    padding-left: 2px;
   }
+  #pageTitle {
+    font-size: 30px;
+    margin: 80px 0px 0px 0px;
+  }
+}
 
-  .socialmed {
-    padding: 10px;
-  }
+/* media queries for page @ sm */
+@media only screen and (min-width: 576px) and (max-width: 767px) {
 }
 
 /***************** END STYLING FOR ALL PAGES *****************/
 
+/*************************************************************/
 /************************* PORTFOLIO *************************/
+/*************************************************************/
 
 .portfolioImg {
   height: auto;
@@ -123,7 +218,7 @@ footer p {
   object-fit: cover;
   background-color: rgba(109, 95, 89, 0.219);
   border-radius: 5px;
-  border: 10px solid rgba(218, 175, 119, 0.4);
+  border: 2px solid rgba(255, 255, 255, 0.8);
 }
 
 /***************** END STYLING FOR PORTFOLIO *****************/
@@ -143,13 +238,25 @@ footer p {
 }
 
 .accentText {
-  color: rgb(192, 115, 64);
+  color: rgb(185, 80, 255);
   font-size: 20px;
+  text-shadow: 1px 1px rgb(111, 149, 255);
+}
+
+@media only screen and (max-width: 375px) {
+  #aboutMeDesc {
+    font-size: 12px;
+  }
+  .accentText {
+    font-size: 14px;
+  }
 }
 
 /****************** END STYLING FOR ABOUT ME *****************/
 
+/*************************************************************/
 /************************* CONTACT ME ************************/
+/*************************************************************/
 
 /******* Form *******/
 form {
@@ -168,34 +275,6 @@ form {
 
 label {
   color: rgb(70, 70, 70);
-}
-
-/******* Socials *******/
-.fab,
-.fas {
-  display: flex;
-  font: normal normal normal 40px/1 FontAwesome;
-  justify-content: center;
-  height: 60px;
-  width: 60px;
-  padding: 8px 10px 10px 10px;
-  border: 2px solid rgb(214, 117, 61);
-  border-radius: 10px;
-  background-color: rgba(109, 95, 89, 0.5);
-  color: white;
-}
-
-.socialslink:hover {
-  text-decoration: none;
-}
-
-#socialsDiv {
-  display: flex;
-  align-items: flex-start;
-}
-
-.socialslink {
-  margin: 0px 10px 10px 0px;
 }
 
 /***************** END STYLING FOR CONTACT ME ****************/
