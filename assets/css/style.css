@@ -1,22 +1,14 @@
-/*************************************************************/
-/***************** STYLING FOR ALL PAGES *****************/
-/*************************************************************/
+/********************************** STYLING FOR ALL PAGES **********************************/
 
 body {
   height: 100%;
   background-color: rgba(39, 39, 39, 0);
   font-family: "Montserrat", sans-serif;
   color: white;
-  font-size: 16px;
+  font-size: 14px;
   position: relative;
   z-index: 2;
 }
-
-/* html {
-  background-image: url("../imgs/devin-avery-LA-edited2.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-} */
 
 video {
   position: fixed;
@@ -44,7 +36,7 @@ footer p {
 /***************** Nav bar *****************/
 .navbar {
   background-color: rgba(232, 255, 250, 0.2) !important;
-  border: 1px solid rgb(142, 255, 230);
+  border: 1px solid rgb(142, 255, 151);
   margin: 5px;
   padding: 20px 30px 5px 30px;
   position: fixed;
@@ -61,7 +53,7 @@ footer p {
   color: white;
 }
 .navbar-light .navbar-nav .nav-link.active {
-  color: rgb(92, 222, 255);
+  color: rgb(142, 255, 151);
 }
 
 /******* Socials *******/
@@ -73,7 +65,7 @@ footer p {
   height: 40px;
   width: 40px;
   padding: 5px 10px 10px 10px;
-  border: 2px solid rgb(111, 255, 200);
+  border: 2px solid rgb(142, 255, 151);
   border-radius: 10px;
   background-color: rgba(109, 95, 89, 0.5);
   color: white;
@@ -161,7 +153,7 @@ footer p {
   }
 }
 
-/***************** Container *****************/
+/***************** Containers *****************/
 
 #pageTitle {
   font-size: 50px;
@@ -170,6 +162,7 @@ footer p {
   color: white;
   margin: 130px 0px 20px 0px;
 }
+
 .row {
   display: flex;
   justify-content: center;
@@ -184,13 +177,7 @@ footer p {
   padding: 10px;
 }
 
-@media (min-width: 1200px) {
-  #portfolioContainer {
-    max-width: 1400px;
-  }
-}
-
-/* media queries for page @ xs */
+/* media queries for containers @ xs */
 @media only screen and (max-width: 575px) {
   .container,
   .col {
@@ -205,24 +192,68 @@ footer p {
   }
 }
 
-/***************** END STYLING FOR ALL PAGES *****************/
+/********************************** END STYLING FOR ALL PAGES **********************************/
 
-/*************************************************************/
-/************************* PORTFOLIO *************************/
-/*************************************************************/
+/****************************************** PORTFOLIO ******************************************/
+
+/* media queries for page @ over 1600px */
+@media only screen and (min-width: 1600px) {
+  .container {
+    min-width: 90%;
+  }
+}
+
+/* media queries for page @ over 1200px */
+@media (min-width: 1200px) {
+  #portfolioContainer {
+    max-width: 1400px;
+  }
+}
+
+/* media queries for page @ sm */
+@media only screen and (max-width: 767px) {
+  body {
+    font-size: 12px;
+  }
+}
+
+/******* Project Cards *******/
+.projectCard {
+  display: flex;
+  flex-direction: column;
+}
 
 .portfolioImg {
   height: auto;
   width: 100%;
-  object-fit: cover;
-  background-color: rgba(109, 95, 89, 0.219);
-  border-radius: 5px;
-  border: 2px solid rgba(255, 255, 255, 0.8);
 }
 
-/***************** END STYLING FOR PORTFOLIO *****************/
+.projectDescription {
+  margin: 20px 0px 0px 0px;
+  border-top: 1px solid white;
+  padding: 5px 0px 0px 0px;
+}
 
-/************************* ABOUT ME *************************/
+.projectLink {
+  color: white;
+  text-decoration: underline;
+  margin: 5px 0px;
+}
+
+.projectLink:hover {
+  color: rgb(123, 255, 71);
+}
+
+.hoverVid {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+}
+
+/**************************************** END PORTFOLIO ****************************************/
+
+/****************************************** ABOUT ME *******************************************/
 
 #aboutMeImg {
   float: left;
@@ -267,29 +298,4 @@ footer p {
   }
 }
 
-/****************** END STYLING FOR ABOUT ME *****************/
-
-/*************************************************************/
-/************************* CONTACT ME ************************/
-/*************************************************************/
-
-/******* Form *******/
-form {
-  background-color: rgba(109, 95, 89, 0.219);
-  width: 100%;
-  padding: 40px;
-  border-radius: 5px;
-  border: 10px solid rgba(218, 175, 119, 0.4);
-  min-width: 350px;
-}
-
-.btn-primary {
-  background-color: rgba(255, 92, 92, 0.5);
-  border-color: rgb(255, 92, 92);
-}
-
-label {
-  color: rgb(70, 70, 70);
-}
-
-/***************** END STYLING FOR CONTACT ME ****************/
+/**************************************** END ABOUT ME *****************************************/
