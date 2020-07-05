@@ -57,7 +57,7 @@ footer p {
 
 /***************** Nav bar *****************/
 .navbar {
-  background-color: rgba(107, 81, 255, 0.1) !important;
+  background-color: rgba(107, 81, 255, 0.2) !important;
   border: 1px solid rgb(255, 255, 255);
   margin: 5px;
   padding: 20px 30px 5px 30px;
@@ -304,7 +304,7 @@ footer p {
     max-width: 150px;
   }
   #aboutMeDesc {
-    font-size: 11px;
+    font-size: 12px;
   }
   .accentText {
     font-size: 14px;
