@@ -17,14 +17,17 @@ a {
 }
 
 #phoneNumber {
-  opacity: 0%;
-  margin: auto;
-  padding-left: 5px;
+  position: absolute;
+  left: 45px;
+  top: 8px;
+  white-space: nowrap;
+  opacity: 50%;
 }
 
 #phoneIcon {
   display: flex;
   flex-direction: row;
+  position: relative;
 }
 
 video {
@@ -109,6 +112,8 @@ footer p {
 @media only screen and (max-width: 575px) {
   #myName {
     font-size: 18px;
+    text-align: end;
+    margin-bottom: 0px;
   }
   .navbar {
     justify-content: center;
@@ -117,18 +122,24 @@ footer p {
   .fab,
   .fas {
     font: normal normal normal 15px/1 FontAwesome;
-    height: 30px;
-    width: 30px;
+    height: 28px;
+    width: 28px;
     padding: 5px 10px 10px 10px;
     border: 1px solid white;
     border-radius: 10px;
     background-color: rgba(109, 95, 89, 0.5);
     color: white;
   }
+  #phoneNumber {
+    font-size: 14px;
+    left: -75px;
+    top: 55px;
+  }
   #socialsDiv {
     display: flex;
     align-items: flex-start;
-    margin: 0px 10px;
+    margin: 0px 0px 0px 8px;
+    height: 30px;
   }
   .socialslink {
     margin: 0px 5px 10px 0px;
@@ -136,7 +147,7 @@ footer p {
   #navigatePages {
     display: flex;
     position: relative;
-    width: 100%;
+    width: 100vw;
     justify-content: center;
     padding-bottom: 5px;
     font-size: 13px;
@@ -145,12 +156,24 @@ footer p {
 
 /* media queries for nav bar @ sm */
 @media only screen and (min-width: 576px) and (max-width: 767px) {
-  .navbar {
-    display: flex;
+  #myName {
+    font-size: 30px;
   }
-  .collapse {
-    display: flex;
-    justify-content: center;
+  .fab,
+  .fas {
+    font: normal normal normal 20px/1 FontAwesome;
+    height: 35px;
+    width: 35px;
+  }
+  .socialslink {
+    margin: 0px 5px 10px 0px;
+  }
+  .navbar {
+    padding-bottom: 20px;
+  }
+  #phoneNumber {
+    left: 0px;
+    top: 40px;
   }
 }
 
