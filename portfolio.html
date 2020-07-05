@@ -25,10 +25,10 @@
 
   <body>
     <!-- Nav bar -->
-    <nav class="navbar navbar-expand-md navbar-light bg-light">
+    <nav class="navbar">
       <h1 class="myName">YI LIN LEE</h1>
       <!-- Socials -->
-      <div class="navbar-nav" id="socialsDiv">
+      <div id="socialsDiv">
         <a href="https://github.com/y-ilin" target="blank" class="socialslink"
           ><i class="fab fa-github"></i
         ></a>
@@ -43,13 +43,9 @@
         ></a>
       </div>
       <!-- Navigate pages -->
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav">
-          <a class="nav-item nav-link" href="./portfolio.html">Portfolio</a>
-          <a class="nav-item nav-link active" href="./index.html"
-            >More on me!</a
-          >
-        </div>
+      <div id="navigatePages">
+        <a class="active" href="./portfolio.html">Portfolio</a>
+        <a href="./index.html">More on me!</a>
       </div>
     </nav>
 
@@ -61,7 +57,7 @@
       loop="loop"
       id="portfolioBackgroundVid"
     >
-      <source src="./assets/imgs/backgroundvideo.mp4" type="video/mp4" />
+      <source src="./assets/imgs/backgroundvid.mov" type="video/mp4" />
     </video>
 
     <!-- Start of Portfolio Container -->

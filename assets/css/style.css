@@ -2,17 +2,23 @@
 
 body {
   height: 100%;
-  background-color: rgba(39, 39, 39, 0);
   font-family: "Montserrat", sans-serif;
   color: white;
-  font-size: 14px;
+  font-size: 15px;
   position: relative;
-  z-index: 2;
+  background-color: rgba(255, 255, 255, 0.01);
+  /* background-image: url("../imgs/backgroundImg.png");
+  background-size: cover; */
+}
+
+a {
+  color: white;
 }
 
 video {
   position: fixed;
   min-width: 100%;
+  min-height: 100vh;
 }
 
 .myName {
@@ -36,24 +42,27 @@ footer p {
 /***************** Nav bar *****************/
 .navbar {
   background-color: rgba(232, 255, 250, 0.2) !important;
-  border: 1px solid rgb(142, 255, 151);
+  border: 1px solid rgb(255, 255, 255);
   margin: 5px;
   padding: 20px 30px 5px 30px;
   position: fixed;
   top: 0;
-  width: 99%;
+  min-width: 99vw;
   z-index: 1;
+  justify-content: flex-start;
 }
 
-.navbar-collapse {
-  justify-content: flex-end;
+#navigatePages {
+  position: absolute;
+  right: 10px;
+}
+#navigatePages a {
+  padding-left: 5px;
 }
 
-.navbar-light .navbar-nav .nav-link {
-  color: white;
-}
-.navbar-light .navbar-nav .nav-link.active {
-  color: rgb(142, 255, 151);
+.active {
+  color: rgb(73, 121, 255);
+  text-decoration: underline;
 }
 
 /******* Socials *******/
@@ -65,91 +74,70 @@ footer p {
   height: 40px;
   width: 40px;
   padding: 5px 10px 10px 10px;
-  border: 2px solid rgb(142, 255, 151);
+  border: 2px solid rgb(255, 255, 255);
   border-radius: 10px;
   background-color: rgba(109, 95, 89, 0.5);
   color: white;
-  background-color: rgba(255, 255, 255, 0.1);
+}
+.socialslink {
+  margin: 0px 10px 10px 0px;
 }
 .socialslink:hover {
   text-decoration: none;
+  color: rgb(73, 121, 255);
 }
 #socialsDiv {
   display: flex;
   align-items: flex-start;
   margin: 0px 20px;
 }
-.socialslink {
-  margin: 0px 10px 10px 0px;
-}
 
 /* media queries for nav bar @ xs */
 @media only screen and (max-width: 575px) {
   .myName {
-    font-size: 20px;
+    font-size: 18px;
   }
-  .navbar-nav {
-    flex-direction: row;
-  }
-  #socialsDiv {
-    margin: 0px;
+  .navbar {
+    justify-content: center;
+    padding: 10px 10px 0px 10px;
   }
   .fab,
   .fas {
-    display: flex;
     font: normal normal normal 15px/1 FontAwesome;
-    justify-content: center;
     height: 30px;
     width: 30px;
     padding: 5px 10px 10px 10px;
-    border: 2px solid rgb(111, 255, 200);
+    border: 1px solid white;
     border-radius: 10px;
     background-color: rgba(109, 95, 89, 0.5);
     color: white;
-    background-color: rgba(255, 255, 255, 0.1);
   }
-  #navbarNavAltMarkup {
+  #socialsDiv {
     display: flex;
-    justify-content: center;
-    font-size: 14px;
+    align-items: flex-start;
+    margin: 0px 10px;
   }
-  .navbar-nav .nav-link {
-    padding: 0rem 0.5rem;
+  .socialslink {
+    margin: 0px 5px 10px 0px;
+  }
+  #navigatePages {
+    display: flex;
+    position: relative;
+    width: 100%;
+    justify-content: center;
+    padding-bottom: 5px;
+    font-size: 13px;
   }
 }
+
 /* media queries for nav bar @ sm */
 @media only screen and (min-width: 576px) and (max-width: 767px) {
   .navbar {
     display: flex;
-    justify-content: center;
   }
   .collapse {
     display: flex;
     justify-content: center;
-  }
-  .navbar-nav {
-    flex-direction: row;
-  }
-  .navbar-nav .nav-link {
-    padding-right: 0.5rem;
-    padding-left: 0.5rem;
-  }
-  .myName {
-    font-size: 30px;
-  }
-  .fab,
-  .fas {
-    display: flex;
-    font: normal normal normal 20px/1 FontAwesome;
-    justify-content: center;
-    height: 35px;
-    width: 35px;
-    padding: 5px 10px 10px 10px;
-    border: 2px solid rgb(111, 255, 200);
-    border-radius: 10px;
-    background-color: rgba(109, 95, 89, 0.5);
-    color: white;
-    background-color: rgba(255, 255, 255, 0.1);
   }
 }
 
@@ -213,7 +201,7 @@ footer p {
 /* media queries for page @ sm */
 @media only screen and (max-width: 767px) {
   body {
-    font-size: 12px;
+    font-size: 14px;
   }
 }
 
@@ -262,8 +250,8 @@ footer p {
 }
 
 #aboutMeDesc {
-  background-color: rgba(232, 255, 250, 0.2) !important;
-  border: 1px solid rgb(142, 255, 230);
+  background-color: rgba(232, 255, 250, 0.15) !important;
+  border: 1px solid rgb(255, 255, 255);
   padding: 20px;
   font-size: 18px;
 }
