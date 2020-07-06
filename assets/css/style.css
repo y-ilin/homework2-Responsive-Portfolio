@@ -79,8 +79,14 @@ footer p {
   position: absolute;
   right: 10px;
 }
+
 #navigatePages a {
   padding-left: 5px;
+}
+
+#navigatePages > a:hover {
+  color: rgb(123, 255, 71);
+  text-decoration: none;
 }
 
 .active {
@@ -107,7 +113,6 @@ footer p {
 }
 .socialslink:hover {
   text-decoration: none;
-  color: rgb(73, 121, 255);
 }
 #socialsDiv {
   display: flex;
@@ -300,7 +305,6 @@ footer p {
 
 #aboutMeDesc {
   background-color: rgba(81, 85, 107, 0.2) !important;
-  /* border: 1px solid rgb(255, 255, 255); */
   padding: 20px;
   font-size: 18px;
 }
@@ -309,6 +313,23 @@ footer p {
   color: rgb(148, 255, 138);
   font-size: 20px;
   text-shadow: 1px 1px rgb(29, 42, 80);
+}
+
+#resumeDiv {
+  display: flex;
+  justify-content: flex-end;
+}
+
+#resume {
+  text-decoration: underline;
+  background-color: rgba(81, 85, 107, 0.2) !important;
+  padding: 10px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+#resume:hover,
+#resumeDiv > a:hover {
+  color: rgb(123, 255, 71);
 }
 
 /* media queries for page @ xs */
