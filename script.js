@@ -42,6 +42,6 @@ $(".portfolioImg").hover(handlerInPortfolio, handlerOutPorfolio);
 // Hover event on phone icon in nav bar
 $("#phoneIcon").on("mouseenter touchenter",function(event) {
   $("#phoneNumber").css({ opacity: "100%" });
-}).on("mouseleave touchleave", function(event) {
+}).on("touchleave mouseleave", function(event) {
   $("#phoneNumber").css({ opacity: "0%" });
 });
