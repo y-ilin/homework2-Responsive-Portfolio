@@ -97,8 +97,7 @@ footer p {
   justify-content: center;
   height: 40px;
   width: 40px;
-  padding: 5px 10px 10px 10px;
-  border: 2px solid rgb(255, 255, 255);
+  padding: 8px 10px 10px 10px;
   border-radius: 10px;
   background-color: rgba(83, 92, 153, 0.5);
   color: white;
@@ -134,7 +133,6 @@ footer p {
     height: 28px;
     width: 28px;
     padding: 5px 10px 10px 10px;
-    border: 1px solid white;
     border-radius: 10px;
     background-color: rgba(109, 95, 89, 0.5);
     color: white;
@@ -301,8 +299,8 @@ footer p {
 }
 
 #aboutMeDesc {
-  background-color: rgba(232, 255, 250, 0.15) !important;
-  border: 1px solid rgb(255, 255, 255);
+  background-color: rgba(81, 85, 107, 0.2) !important;
+  /* border: 1px solid rgb(255, 255, 255); */
   padding: 20px;
   font-size: 18px;
 }
