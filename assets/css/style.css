@@ -36,10 +36,18 @@ video {
   min-height: 100vh;
 }
 
+h1 {
+  margin-bottom: 0px;
+}
+
 #myName {
-  font-weight: 200;
+  font-weight: 600;
   font-size: 40px;
   color: rgb(107, 81, 255);
+  text-shadow: 2px 2px rgb(54, 54, 54);
+  font-family: "Montserrat", sans-serif;
+
+  font-style: italic;
 }
 
 footer {
@@ -57,10 +65,10 @@ footer p {
 
 /***************** Nav bar *****************/
 .navbar {
-  background-color: rgba(107, 81, 255, 0.2) !important;
+  background-color: rgba(107, 81, 255, 0.3) !important;
   border: 1px solid rgb(255, 255, 255);
   margin: 5px;
-  padding: 20px 30px 5px 30px;
+  padding: 15px 30px 15px 30px;
   position: fixed;
   top: 0;
   min-width: 99vw;
@@ -96,7 +104,7 @@ footer p {
   color: white;
 }
 .socialslink {
-  margin: 0px 10px 10px 0px;
+  margin: 0px 10px 0px 0px;
 }
 .socialslink:hover {
   text-decoration: none;
@@ -142,7 +150,7 @@ footer p {
     height: 30px;
   }
   .socialslink {
-    margin: 0px 5px 10px 0px;
+    margin: 0px 5px 0px 0px;
   }
   #navigatePages {
     display: flex;
@@ -166,20 +174,22 @@ footer p {
     width: 35px;
   }
   .socialslink {
-    margin: 0px 5px 10px 0px;
+    margin: 0px 5px 0px 0px;
   }
   .navbar {
-    padding-bottom: 20px;
+    padding-bottom: 25px;
   }
   #phoneNumber {
     left: 0px;
-    top: 40px;
+    top: 38px;
   }
 }
 
 /***************** Containers *****************/
 
 #pageTitle {
+  font-family: "Montserrat", sans-serif;
+  text-shadow: 1px 1px rgb(54, 54, 54);
   font-size: 50px;
   border: none;
   background-color: rgba(255, 255, 255, 0);

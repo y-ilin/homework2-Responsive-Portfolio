@@ -39,17 +39,9 @@ $(".portfolioImg").hover(handlerInPortfolio, handlerOutPorfolio);
 
 
 /////////////////////// Phone icon ///////////////////////
-// Handle mouse enter event on portfolio images to show zoomed out screenshot
-const handlerInPhone = function(event) {
-  // $(event.currentTarget).append("<p>0403828226</p>");
-  // const phoneNum = document.querySelector("#phoneNumber");
-  // console.log(phoneNum);
-  // phoneNum.animate({ opacity: "100%" }, 1000);
-  $("#phoneNumber").css({ opacity: "100%" });
-}
-// Handle mouse leave event on portfolio images to show zoomed in screenshot
-const handlerOutPhone = function(event) {
-  $("#phoneNumber").css({ opacity: "0%" });
-}
 // Hover event on phone icon in nav bar
-$("#phoneIcon").hover(handlerInPhone, handlerOutPhone);
+$("#phoneIcon").on("mouseenter touchenter",function(event) {
+  $("#phoneNumber").css({ opacity: "100%" });
+}).on("mouseleave touchleave", function(event) {
+  $("#phoneNumber").css({ opacity: "0%" });
+});
