@@ -1,7 +1,8 @@
-# homework2-Responsive-Portfolio
+# My Portfolio
 
-Monash University Bootcamp homework 2
+Hello!
 
+Follow this link to get to my portfolio: https://y-ilin.github.io/
+
+It'll look like this:
 ![Assigment Screenshot](./assets/imgs/screenshot.png)
-
-Link to deployed site: https://y-ilin.github.io/
