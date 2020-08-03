@@ -66,7 +66,7 @@ footer p {
   background-color: rgba(107, 81, 255, 0.3) !important;
   border: 1px solid rgb(255, 255, 255);
   margin: 5px;
-  padding: 15px 30px 15px 30px;
+  padding: 10px 30px 10px 30px;
   position: fixed;
   top: 0;
   min-width: 99vw;
@@ -129,14 +129,14 @@ footer p {
   }
   .navbar {
     justify-content: center;
-    padding: 10px 10px 0px 10px;
+    padding: 5px 0px 0px 0px;
   }
   .fab,
   .fas {
-    font: normal normal normal 15px/1 FontAwesome;
+    font: normal normal normal 17px/1 FontAwesome;
     height: 28px;
     width: 28px;
-    padding: 5px 10px 10px 10px;
+    padding: 5px 8px 6px 8px;
     border-radius: 10px;
     background-color: rgba(109, 95, 89, 0.5);
     color: white;
@@ -178,9 +178,6 @@ footer p {
   }
   .socialslink {
     margin: 0px 5px 0px 0px;
-  }
-  .navbar {
-    padding-bottom: 25px;
   }
   #phoneNumber {
     left: 0px;
@@ -235,7 +232,7 @@ footer p {
 
 /********************************** END STYLING FOR ALL PAGES **********************************/
 
-/****************************************** PORTFOLIO ******************************************/
+/******************************************** INDEX ********************************************/
 
 /* media queries for page @ over 1600px */
 @media only screen and (min-width: 1600px) {
@@ -292,9 +289,9 @@ footer p {
   width: 100%;
 }
 
-/**************************************** END PORTFOLIO ****************************************/
+/****************************************** END INDEX ******************************************/
 
-/****************************************** ABOUT ME *******************************************/
+/******************************************** MORE *********************************************/
 
 #aboutMeImg {
   float: left;
@@ -354,4 +351,4 @@ footer p {
   }
 }
 
-/**************************************** END ABOUT ME *****************************************/
+/****************************************** END MORE *******************************************/
