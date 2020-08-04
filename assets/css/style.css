@@ -134,25 +134,15 @@ footer p {
   }
 
   #navbar-brand {
-    font-weight: 600;
-    font-size: 20px;
-    color: rgb(107, 81, 255);
-    text-shadow: 1px 2px rgb(54, 54, 54);
-    font-family: "Montserrat", sans-serif;
-    font-style: italic;
+    text-shadow: 1px 2px black;
     margin-right: 0.5rem;
   }
 
   .fab,
   .fas {
-    display: flex;
-    font: normal normal normal 20px/1 FontAwesome;
-    justify-content: center;
-    height: 30px;
-    width: 30px;
-    padding: 4px 3px 0px 3px;
-    border-radius: 20px;
-    background-color: #00000096;
+    height: 35px;
+    width: 35px;
+    padding: 6px 3px 0px 3px;
     color: white;
   }
 }
