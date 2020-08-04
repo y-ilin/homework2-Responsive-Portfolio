@@ -106,10 +106,10 @@ footer p {
   margin: 0px 2px;
 }
 
-@media (hover: hover) and (pointer: fine) {
-  .socialslink:hover {
-    text-decoration: none;
-  }
+.socialslink:hover,
+.socialslink:active,
+.socialslink:focus {
+  text-decoration: none;
 }
 
 .fab,
@@ -121,6 +121,7 @@ footer p {
   width: 40px;
   padding: 9px 3px 0px 4px;
   border-radius: 20px;
+  border: 1px solid black;
   background-color: #00000096;
   color: white;
 }
@@ -256,7 +257,7 @@ footer p {
   text-align: center;
   color: white;
   padding: 0px 15px 0px 0px;
-  text-shadow: 5px 6px black;
+  text-shadow: 2px 2px black;
 }
 
 #skillsDiv {
@@ -351,10 +352,10 @@ footer p {
   margin: 5px 0px;
 }
 
-@media (-moz-touch-enabled: 0), (pointer: fine) {
-  .projectLink:hover {
-    color: rgb(123, 255, 71);
-  }
+.projectLink:hover,
+.projectLink:active,
+.projectLink:focus {
+  color: rgb(123, 255, 71);
 }
 
 .projectCard a {
@@ -372,10 +373,11 @@ footer p {
   color: white;
   opacity: 0%;
 }
-@media (-moz-touch-enabled: 0), (pointer: fine) {
-  .viewApp:hover {
-    opacity: 80%;
-  }
+
+.viewApp:hover,
+.viewApp:active,
+.viewApp:focus {
+  opacity: 80%;
 }
 
 .hoverVid {
@@ -420,11 +422,13 @@ footer p {
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
 }
 
-@media (-moz-touch-enabled: 0), (pointer: fine) {
-  #resume:hover,
-  #resumeDiv > a:hover {
-    color: rgb(123, 255, 71);
-  }
+#resume:hover,
+#resume:active,
+#resume:focus,
+#resumeDiv > a:hover,
+#resumeDiv > a:active,
+#resumeDiv > a:focus {
+  color: rgb(123, 255, 71);
 }
 
 /* media queries for page @ xs */
