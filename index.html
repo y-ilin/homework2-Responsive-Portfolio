@@ -24,34 +24,57 @@
   </head>
 
   <body>
-    <!-- Nav bar -->
-    <nav class="navbar">
-      <h1 id="myName">YI LIN LEE</h1>
-      <!-- Socials -->
-      <div id="socialsDiv">
-        <a href="https://github.com/y-ilin" target="blank" class="socialslink"
-          ><i class="fab fa-github"></i
-        ></a>
-        <a
-          href="https://www.linkedin.com/in/yi-lin-lee/"
-          target="blank"
-          class="socialslink"
-          ><i class="fab fa-linkedin"></i
-        ></a>
-        <a href="mailto:yilinlee19@gmail.com" target="blank" class="socialslink"
-          ><i class="fas fa-envelope"></i
-        ></a>
-        <a target="blank" class="socialslink" id="phoneIcon"
-          ><i class="fas fa-phone"></i>
-          <p id="phoneNumber">+61 403828226</p></a
+    <!-- Start of Nav bar -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+      <div id="navbarBrandSocials">
+        <a class="navbar-brand" id="navbar-brand" href="./index.html"
+          >YI LIN LEE</a
         >
+        <!-- Socials -->
+        <div id="socialsDiv">
+          <a href="https://github.com/y-ilin" target="blank" class="socialslink"
+            ><i class="fab fa-github"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/yi-lin-lee/"
+            target="blank"
+            class="socialslink"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+          <a
+            href="mailto:yilinlee19@gmail.com"
+            target="blank"
+            class="socialslink"
+            ><i class="fas fa-envelope"></i
+          ></a>
+          <a target="blank" class="socialslink" id="phoneIcon"
+            ><i class="fas fa-phone"></i>
+            <p id="phoneNumber">+61 403828226</p></a
+          >
+        </div>
       </div>
-      <!-- Navigate pages -->
-      <div id="navigatePages">
-        <a class="active" href="./index.html">Portfolio</a>
-        <a href="./more.html">More on me!</a>
+
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link active" href="./index.html"
+            >Portfolio <span class="sr-only">(current)</span></a
+          >
+          <a class="nav-item nav-link" href="./more.html">More on me!</a>
+        </div>
       </div>
     </nav>
+    <!-- End of Nav bar -->
 
     <!-- Background video -->
     <video
@@ -64,16 +87,31 @@
       <source src="./assets/imgs/backgroundvid.mov" type="video/mp4" />
     </video>
 
-    <!-- Start of Intro Container -->
-
-    <!-- End of Intro Container -->
-
+    <!---------- Start Intro & Skills Container ---------->
+    <div id="introContainer">
+      <!--class="container"-->
+      <div id="introName">YI LIN</div>
+      <div id="role">FULL STACK WEB DEVELOPER</div>
+      <div id="skillsDiv">
+        <p>JavaScript</p>
+        <p>jQuery</p>
+        <p>HTML</p>
+        <p>CSS</p>
+        <p>Node.js</p>
+        <p>Express.js</p>
+        <p>Responsive Layouts</p>
+        <p>MySQL</p>
+        <p>Git</p>
+        <p>Heroku</p>
+      </div>
+    </div>
+    <!----------- End Intro & Skills Container ---------->
 
     <!-- Start of Portfolio Container -->
-    <main class="container" id="portfolioContainer">
+    <div class="container" id="portfolioContainer">
       <div class="row">
-        <div class="col col-12" id="pageTitle">
-          <p id="pageTitleP">Portfolio</p>
+        <div class="col col-12">
+          <p id="portfolioTitle">PORTFOLIO</p>
         </div>
       </div>
       <div class="row">
@@ -89,6 +127,7 @@
               alt="Weather Dashboard app screenshot"
               class="portfolioImg"
             />
+            <p class="viewApp">Go to app →</p>
           </a>
           <p class="projectTitle">WEATHER DASHBOARD</p>
           <p>
@@ -99,12 +138,6 @@
             target="blank"
             class="projectLink"
             >Link to repo →</a
-          >
-          <a
-            href="https://y-ilin.github.io/Weather-Dashboard/"
-            target="blank"
-            class="projectLink"
-            >Link to app →</a
           >
         </div>
         <!-- Work Day Scheduler app card -->
@@ -118,7 +151,9 @@
               src="./assets/imgs/WorkDayScheduler.png"
               alt="Work Day Scheduler app screenshot"
               class="portfolioImg"
-          /></a>
+            />
+            <p class="viewApp">Go to app →</p>
+          </a>
           <p class="projectTitle">WORK DAY SCHEDULER</p>
           <p>
             Plan out events for each hour of your work day.
@@ -127,14 +162,8 @@
             href="https://github.com/y-ilin/Work-Day-Scheduler"
             target="blank"
             class="projectLink"
-            >Link to repo →</a
-          >
-          <a
-            href="https://y-ilin.github.io/Work-Day-Scheduler/"
-            target="blank"
-            class="projectLink"
-            >Link to app →</a
-          >
+            >Link to repo →
+          </a>
         </div>
         <!-- Personal Fitness Planner app card -->
         <div class="col col-12 col-md-6 col-xl-3 projectCard">
@@ -147,7 +176,9 @@
               src="./assets/imgs/PersonalFitnessPlanner.png"
               alt="Personal Fitness Planner app screenshot"
               class="portfolioImg"
-          /></a>
+            />
+            <p class="viewApp">Go to app →</p>
+          </a>
           <p class="projectTitle">PERSONAL FITNESS PLANNER</p>
           <p>
             Receive and track your personalized fitness plan based on your
@@ -157,14 +188,8 @@
             href="https://github.com/ben-j-st/projectOne---bootcamp"
             target="blank"
             class="projectLink"
-            >Link to repo →</a
-          >
-          <a
-            href="https://ben-j-st.github.io/projectOne---bootcamp/index.html"
-            target="blank"
-            class="projectLink"
-            >Link to app →</a
-          >
+            >Link to repo →
+          </a>
         </div>
         <!-- Code Quiz app card -->
         <div class="col col-12 col-md-6 col-xl-3 projectCard">
@@ -173,26 +198,20 @@
               src="./assets/imgs/CodingQuiz.png"
               alt="Coding Quiz app screenshot"
               class="portfolioImg"
-          /></a>
-          <p class="projectTitle">
-            CODE QUIZ
-          </p>
+            />
+            <p class="viewApp">Go to app →</p>
+          </a>
+          <p class="projectTitle">CODE QUIZ</p>
           <p>Multiple-choice question quiz on JavaScript concepts.</p>
           <a
             href="https://github.com/y-ilin/Code-Quiz"
             target="blank"
             class="projectLink"
-            >Link to repo →</a
-          >
-          <a
-            href="https://y-ilin.github.io/Code-Quiz/"
-            target="blank"
-            class="projectLink"
-            >Link to app →</a
-          >
+            >Link to repo →
+          </a>
         </div>
       </div>
-    </main>
+    </div>
     <!-- End of Portfolio Container -->
 
     <!-- Start of Footer -->

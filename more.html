@@ -26,34 +26,57 @@
   </head>
 
   <body>
-    <!-- Nav bar -->
-    <nav class="navbar">
-      <h1 id="myName">YI LIN LEE</h1>
-      <!-- Socials -->
-      <div id="socialsDiv">
-        <a href="https://github.com/y-ilin" target="blank" class="socialslink"
-          ><i class="fab fa-github"></i
-        ></a>
-        <a
-          href="https://www.linkedin.com/in/yi-lin-lee/"
-          target="blank"
-          class="socialslink"
-          ><i class="fab fa-linkedin"></i
-        ></a>
-        <a href="mailto:yilinlee19@gmail.com" target="blank" class="socialslink"
-          ><i class="fas fa-envelope"></i
-        ></a>
-        <a target="blank" class="socialslink" id="phoneIcon"
-          ><i class="fas fa-phone"></i>
-          <p id="phoneNumber">+61 403828226</p></a
+     <!-- Start of Nav bar -->
+     <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+      <div id="navbarBrandSocials">
+        <a class="navbar-brand" id="navbar-brand" href="./index.html"
+          >YI LIN LEE</a
         >
+        <!-- Socials -->
+        <div id="socialsDiv">
+          <a href="https://github.com/y-ilin" target="blank" class="socialslink"
+            ><i class="fab fa-github"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/yi-lin-lee/"
+            target="blank"
+            class="socialslink"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+          <a
+            href="mailto:yilinlee19@gmail.com"
+            target="blank"
+            class="socialslink"
+            ><i class="fas fa-envelope"></i
+          ></a>
+          <a target="blank" class="socialslink" id="phoneIcon"
+            ><i class="fas fa-phone"></i>
+            <p id="phoneNumber">+61 403828226</p></a
+          >
+        </div>
       </div>
-      <!-- Navigate pages -->
-      <div id="navigatePages">
-        <a href="./index.html">Portfolio</a>
-        <a class="active" href="./more.html">More on me!</a>
+
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link" href="./index.html"
+            >Portfolio <span class="sr-only">(current)</span></a
+          >
+          <a class="nav-item nav-link active" href="./more.html">More on me!</a>
+        </div>
       </div>
     </nav>
+    <!-- End of Nav bar -->
 
     <!-- Background video -->
     <video
@@ -69,11 +92,11 @@
     <main class="container">
       <div class="row">
         <div class="col col-12 col-lg-8" id="pageTitle">
-          <p id="pageTitleP">More on me</p>
+          <p id="aboutMeTitle">More on me</p>
         </div>
       </div>
       <div class="row">
-        <div class="col-12 col-lg-8" id="aboutMeDesc">
+        <div class="col-12 col-lg-10" id="aboutMeDesc">
           <img
             src="./assets/imgs/yilin.jpg"
             id="aboutMeImg"
@@ -104,7 +127,7 @@
         </div>
       </div>
       <div class="row">
-        <div class="col col-12 col-lg-8" id="resumeDiv">
+        <div class="col col-12 col-lg-10" id="resumeDiv">
           <a href="./assets/imgs/YiLinLeeResume.pdf" target="blank"><p id="resume">Download my resume ↓</p></a>
         </div>
     </main>

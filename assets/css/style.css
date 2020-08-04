@@ -7,6 +7,7 @@ body {
   font-size: 16px;
   position: relative;
   background-color: rgba(255, 255, 255, 0.01);
+  line-height: 1;
 }
 
 a {
@@ -31,19 +32,17 @@ a {
 
 video {
   position: fixed;
+  top: 0;
   min-width: 100%;
   min-height: 100vh;
+  z-index: -1;
 }
 
-h1 {
-  margin-bottom: 0px;
-}
-
-#myName {
+#introName {
   font-weight: 600;
-  font-size: 40px;
+  font-size: 160px;
   color: rgb(107, 81, 255);
-  text-shadow: 2px 2px rgb(54, 54, 54);
+  text-shadow: 6px 6px rgb(54, 54, 54);
   font-family: "Montserrat", sans-serif;
   font-style: italic;
 }
@@ -63,125 +62,95 @@ footer p {
 
 /***************** Nav bar *****************/
 .navbar {
-  background-color: rgba(107, 81, 255, 0.3) !important;
-  border: 1px solid rgb(255, 255, 255);
-  margin: 5px;
-  padding: 10px 30px 10px 30px;
-  position: fixed;
-  top: 0;
-  min-width: 99vw;
-  z-index: 1;
-  justify-content: flex-start;
+  background-color: rgba(81, 98, 255, 0) !important;
+  padding: 0.8rem 1rem;
 }
 
-#navigatePages {
-  position: absolute;
-  right: 10px;
+#navbar-brand {
+  font-weight: 600;
+  font-size: 30px;
+  font-style: italic;
+  text-shadow: 2px 3px black;
+  -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
 }
 
-#navigatePages a {
-  padding-left: 5px;
+#navbarBrandSocials {
+  display: flex;
+  flex-direction: row;
 }
 
-#navigatePages > a:hover {
-  color: rgb(123, 255, 71);
-  text-decoration: none;
+.navbar-toggler {
+  border: none;
+}
+.navbar-toggler-icon {
+  width: 1em;
+  height: 1em;
 }
 
-.active {
-  color: white;
-  font-weight: bold;
-  text-decoration: underline;
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-collapse {
+    display: flex;
+    justify-content: flex-end;
+  }
 }
 
 /******* Socials *******/
-.fab,
-.fas {
+#socialsDiv {
   display: flex;
-  font: normal normal normal 25px/1 FontAwesome;
-  justify-content: center;
-  height: 40px;
-  width: 40px;
-  padding: 8px 10px 10px 10px;
-  border-radius: 10px;
-  background-color: rgba(83, 92, 153, 0.5);
-  color: white;
+  flex-direction: row;
 }
+
 .socialslink {
-  margin: 0px 10px 0px 0px;
+  margin: 0px 2px;
 }
+
 .socialslink:hover {
   text-decoration: none;
 }
-#socialsDiv {
+
+.fab,
+.fas {
   display: flex;
-  align-items: flex-start;
-  margin: 0px 20px;
+  font: normal normal normal 20px/1 FontAwesome;
+  justify-content: center;
+  height: 40px;
+  width: 40px;
+  padding: 9px 3px 0px 4px;
+  border-radius: 20px;
+  background-color: #00000096;
+  color: white;
 }
 
 /* media queries for nav bar @ xs */
 @media only screen and (max-width: 575px) {
-  #myName {
-    font-size: 22px;
-    text-align: end;
-    margin-bottom: 0px;
-    text-shadow: 1px 1px rgb(54, 54, 54);
-  }
+  /***************** Nav bar *****************/
   .navbar {
-    justify-content: center;
-    padding: 5px 0px 0px 0px;
+    padding: 0.5rem;
   }
-  .fab,
-  .fas {
-    font: normal normal normal 17px/1 FontAwesome;
-    height: 28px;
-    width: 28px;
-    padding: 5px 8px 6px 8px;
-    border-radius: 10px;
-    background-color: rgba(109, 95, 89, 0.5);
-    color: white;
-  }
-  #phoneNumber {
-    font-size: 14px;
-    left: -75px;
-    top: 55px;
-  }
-  #socialsDiv {
-    display: flex;
-    align-items: flex-start;
-    margin: 0px 0px 0px 8px;
-    height: 30px;
-  }
-  .socialslink {
-    margin: 0px 5px 0px 0px;
-  }
-  #navigatePages {
-    display: flex;
-    position: relative;
-    width: 100vw;
-    justify-content: center;
-    padding-bottom: 5px;
-    font-size: 14px;
-  }
-}
 
-/* media queries for nav bar @ sm */
-@media only screen and (min-width: 576px) and (max-width: 767px) {
-  #myName {
-    font-size: 30px;
+  #navbar-brand {
+    font-weight: 600;
+    font-size: 20px;
+    color: rgb(107, 81, 255);
+    text-shadow: 1px 2px rgb(54, 54, 54);
+    font-family: "Montserrat", sans-serif;
+    font-style: italic;
+    margin-right: 0.5rem;
   }
+
   .fab,
   .fas {
+    display: flex;
     font: normal normal normal 20px/1 FontAwesome;
-    height: 35px;
-    width: 35px;
-  }
-  .socialslink {
-    margin: 0px 5px 0px 0px;
-  }
-  #phoneNumber {
-    left: 0px;
-    top: 38px;
+    justify-content: center;
+    height: 30px;
+    width: 30px;
+    padding: 4px 3px 0px 3px;
+    border-radius: 10px;
+    background-color: rgba(83, 92, 153, 0.5);
+    color: white;
   }
 }
 
@@ -213,6 +182,10 @@ footer p {
   justify-content: center;
   margin: 0px;
   padding: 10px;
+}
+
+#introContainer {
+  padding-top: 80px;
 }
 
 /* media queries for containers @ xs */
@@ -255,6 +228,100 @@ footer p {
   }
 }
 
+/*********** Intro Skills Div *************/
+
+#introContainer {
+  width: 100%;
+  height: 90vh;
+  margin: 60px 0px 0px 0px;
+}
+
+#introName {
+  font-weight: bold;
+  font-size: 120px;
+  text-align: center;
+  margin: 0px;
+  padding: 20vh 15px 20px 0px;
+  font-family: "Montserrat", sans-serif;
+  font-style: italic;
+  text-shadow: 5px 6px black;
+  -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 4px;
+  -webkit-text-stroke-color: black;
+}
+
+#role {
+  text-align: center;
+  color: white;
+  padding: 0px 15px 0px 0px;
+}
+
+#skillsDiv {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 700px;
+  margin-top: 10vh;
+  padding: 1.5em;
+}
+#skillsDiv p {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  display: inline-block;
+  margin: 3px;
+  padding: 0.5em 0.9em;
+  border-radius: 1em;
+}
+
+.row {
+  margin: 0px;
+}
+
+.col {
+  display: flex;
+  justify-content: center;
+}
+
+#portfolioContainer {
+  height: 100vh;
+}
+
+#portfolioTitle,
+#aboutMeTitle {
+  font-family: "Montserrat", sans-serif;
+  font-style: italic;
+  font-weight: bold;
+  text-shadow: 1px 1px rgb(54, 54, 54);
+  font-size: 50px;
+  border: none;
+  -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black;
+  margin: 80px 0px 50px 0px;
+  padding-bottom: 15px;
+  border-bottom: 2px solid black;
+}
+
+/* media queries for page @ over 1600px */
+@media only screen and (min-width: 1600px) {
+  .container {
+    min-width: 90%;
+  }
+}
+
+/* media queries for page @ over 1200px */
+@media (min-width: 1200px) {
+  #portfolioContainer {
+    max-width: 1400px;
+  }
+}
+
+/* media queries for page @ sm */
+@media only screen and (max-width: 767px) {
+  body {
+    font-size: 14px;
+  }
+}
+
 /******* Project Cards *******/
 .projectCard {
   display: flex;
@@ -267,9 +334,13 @@ footer p {
 }
 
 .projectTitle {
+  font-weight: bold;
   margin: 20px 0px 0px 0px;
   border-top: 1px solid white;
-  padding: 5px 0px 0px 0px;
+  padding: 5px 0px 5px 0px;
+  -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
 }
 
 .projectLink {
@@ -280,6 +351,25 @@ footer p {
 
 .projectLink:hover {
   color: rgb(123, 255, 71);
+}
+
+.projectCard a {
+  position: relative;
+}
+.viewApp {
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  opacity: 0%;
+}
+.viewApp:hover {
+  opacity: 80%;
 }
 
 .hoverVid {
@@ -300,7 +390,8 @@ footer p {
 }
 
 #aboutMeDesc {
-  background-color: rgba(81, 85, 107, 0.2) !important;
+  border: 2px solid rgba(0, 0, 0, 0.829);
+  border-radius: 20px;
   padding: 20px;
   font-size: 18px;
 }
