@@ -351,7 +351,7 @@ footer p {
   margin: 5px 0px;
 }
 
-@media (hover: hover) and (pointer: fine) {
+@media (-moz-touch-enabled: 0), (pointer: fine) {
   .projectLink:hover {
     color: rgb(123, 255, 71);
   }
@@ -372,7 +372,7 @@ footer p {
   color: white;
   opacity: 0%;
 }
-@media (hover: hover) and (pointer: fine) {
+@media (-moz-touch-enabled: 0), (pointer: fine) {
   .viewApp:hover {
     opacity: 80%;
   }
@@ -420,7 +420,7 @@ footer p {
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
 }
 
-@media (hover: hover) and (pointer: fine) {
+@media (-moz-touch-enabled: 0), (pointer: fine) {
   #resume:hover,
   #resumeDiv > a:hover {
     color: rgb(123, 255, 71);
