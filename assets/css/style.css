@@ -111,9 +111,6 @@ footer p {
     text-decoration: none;
   }
 }
-/* .socialslink:hover {
-  text-decoration: none;
-} */
 
 .fab,
 .fas {
@@ -344,9 +341,8 @@ footer p {
   margin: 20px 0px 0px 0px;
   border-top: 1px solid white;
   padding: 5px 0px 5px 0px;
-  -webkit-text-fill-color: white; /* Will override color (regardless of order) */
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: black;
+  color: white;
+  text-shadow: 2px 2px black;
 }
 
 .projectLink {
@@ -360,9 +356,6 @@ footer p {
     color: rgb(123, 255, 71);
   }
 }
-/* .projectLink:hover {
-  color: rgb(123, 255, 71);
-} */
 
 .projectCard a {
   position: relative;
@@ -433,10 +426,6 @@ footer p {
     color: rgb(123, 255, 71);
   }
 }
-/* #resume:hover,
-#resumeDiv > a:hover {
-  color: rgb(123, 255, 71);
-} */
 
 /* media queries for page @ xs */
 @media only screen and (max-width: 575px) {
