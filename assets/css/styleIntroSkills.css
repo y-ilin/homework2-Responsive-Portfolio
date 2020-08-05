@@ -2,7 +2,7 @@
 
 #introContainer {
   width: 100%;
-  height: 90vh;
+  height: 100vh;
   margin: 60px 0px 0px 0px;
 }
 
@@ -11,7 +11,7 @@
   font-size: 120px;
   text-align: center;
   margin: 0px;
-  padding: 25vh 15px 20px 0px;
+  padding: 28vh 15px 20px 0px;
   font-family: "Montserrat", sans-serif;
   font-style: italic;
   text-shadow: 5px 6px black;
@@ -52,6 +52,10 @@
 @media only screen and (max-width: 575px) {
   #introName {
     font-size: 100px;
-    padding: 20vh 15px 20px 0px;
+    padding: 22vh 15px 20px 0px;
+  }
+  #skillsDiv {
+    margin-top: 12vh;
+    margin-bottom: 15vh;
   }
 }
