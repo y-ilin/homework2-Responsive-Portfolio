@@ -1,0 +1,83 @@
+/******************************** STYLING FOR MORE ON ME PAGE *********************************/
+
+#aboutMeTitle {
+  font-family: "Montserrat", sans-serif;
+  font-style: italic;
+  font-weight: bold;
+  text-shadow: 1px 1px rgb(54, 54, 54);
+  font-size: 50px;
+  border: none;
+  -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: black;
+  margin: 15vh 0px 5vh 0px;
+  padding-bottom: 15px;
+  border-bottom: 2px solid black;
+}
+
+#aboutMeImg {
+  float: left;
+  max-width: 200px;
+  margin: 0px 20px 0px 0px;
+}
+
+#aboutMeDesc {
+  border: 2px solid rgba(0, 0, 0, 0.829);
+  border-radius: 20px;
+  padding: 20px;
+  font-size: 18px;
+}
+
+.accentText {
+  color: rgb(148, 255, 138);
+  font-size: 20px;
+  text-shadow: 1px 1px rgb(29, 42, 80);
+}
+
+#resumeDiv {
+  display: flex;
+  justify-content: flex-end;
+}
+
+#resume {
+  text-decoration: underline;
+  background-color: rgba(81, 85, 107, 0.2) !important;
+  padding: 10px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+#resume:hover,
+#resume:active,
+#resume:focus,
+#resumeDiv > a:hover,
+#resumeDiv > a:active,
+#resumeDiv > a:focus {
+  color: rgb(123, 255, 71);
+}
+
+/* media queries for page @ xs */
+@media only screen and (max-width: 575px) {
+  #aboutMeTitle {
+    font-size: 40px;
+  }
+
+  #aboutMeImg {
+    max-width: 150px;
+  }
+  #aboutMeDesc {
+    font-size: 14px;
+  }
+  .accentText {
+    font-size: 16px;
+  }
+}
+
+/* media queries for page @ sm */
+@media only screen and (max-width: 767px) {
+  #aboutMeDesc {
+    margin-top: 15px;
+  }
+  .accentText {
+    font-size: 17px;
+  }
+}

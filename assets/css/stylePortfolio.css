@@ -1,0 +1,108 @@
+/*********************************** STYLING FOR PORTFOLIO DIV ********************************/
+
+.row {
+  margin: 0px;
+  justify-content: center;
+}
+
+.col {
+  display: flex;
+  justify-content: center;
+}
+
+#portfolioContainer {
+  height: 100vh;
+  border: 2px solid black;
+  border-radius: 30px;
+  font-size: 14px;
+}
+
+#portfolioTitle {
+  font-family: "Montserrat", sans-serif;
+  font-style: italic;
+  font-weight: bold;
+  text-shadow: 1px 1px rgb(54, 54, 54);
+  font-size: 50px;
+  border: none;
+  -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: black;
+  margin: 80px 0px 50px 0px;
+  padding-bottom: 15px;
+  border-bottom: 2px solid black;
+}
+
+/* media queries for page @ over 1600px */
+@media only screen and (min-width: 1600px) {
+  .container {
+    min-width: 90%;
+  }
+}
+
+/* media queries for page @ over 1200px */
+@media (min-width: 1200px) {
+  #portfolioContainer {
+    max-width: 1400px;
+  }
+}
+
+/* media queries for page @ sm */
+/* @media only screen and (max-width: 767px) {
+  #portfolioContainer {
+    font-size: 14px;
+  }
+} */
+
+/******* Project Cards *******/
+.projectCard {
+  display: flex;
+  flex-direction: column;
+}
+
+.portfolioImg {
+  height: auto;
+  width: 100%;
+}
+
+.projectTitle {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin: 20px 0px 0px 0px;
+  border-top: 1px solid white;
+  padding: 5px 0px 5px 0px;
+  color: white;
+  text-shadow: 2px 2px black;
+}
+
+.projectLink {
+  color: white;
+  text-decoration: underline;
+  margin: 5px 0px;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .projectLink {
+    color: rgb(123, 255, 71);
+  }
+}
+
+.projectCard a {
+  position: relative;
+}
+.viewApp {
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: white;
+  opacity: 0%;
+}
+@media (hover: hover) and (pointer: fine) {
+  .viewApp:hover {
+    opacity: 80%;
+  }
+}

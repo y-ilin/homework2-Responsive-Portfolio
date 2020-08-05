@@ -3,14 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-    <title>Yi Lin</title>
+    <title>Yi Lin Lee</title>
     <!-- Boostrap Stylesheet -->
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     />
-    <!-- Our own CSS stylesheet -->
+    <!-- Own CSS stylesheets -->
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/styleIntroSkills.css" />
+    <link rel="stylesheet" href="./assets/css/stylePortfolio.css" />
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="./assets/imgs/logo.png" />
     <!-- Fonts -->
@@ -24,9 +26,19 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
   </head>
-
   <body>
-    <!-- Start of Nav bar -->
+    <!-- Background video -->
+    <div id="backgroundFilter"></div>
+    <video
+      playsinline="playsinline"
+      autoplay="autoplay"
+      muted="muted"
+      loop="loop"
+      id="portfolioBackgroundVid"
+    >
+      <source src="./assets/imgs/backgroundvid.mov" type="video/mp4" />
+    </video>
+    <!------------------- START Nav Bar ------------------>
     <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
       <div id="navbarBrandSocials">
         <a class="navbar-brand" id="navbar-brand" href="./index.html"
@@ -49,10 +61,6 @@
             class="socialslink"
             ><i class="fas fa-envelope"></i
           ></a>
-          <a target="blank" class="socialslink" id="phoneIcon"
-            ><i class="fas fa-phone"></i>
-            <p id="phoneNumber">+61 403828226</p></a
-          >
         </div>
       </div>
 
@@ -69,25 +77,16 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
-          <a class="nav-item nav-link active" href="./index.html"
+          <a class="nav-item nav-link nav-pages active" href="./index.html"
             >Portfolio <span class="sr-only">(current)</span></a
           >
-          <a class="nav-item nav-link" href="./more.html">More on me!</a>
+          <a class="nav-item nav-link nav-pages" href="./more.html"
+            >More on me!</a
+          >
         </div>
       </div>
     </nav>
-    <!-- End of Nav bar -->
-
-    <!-- Background video -->
-    <video
-      playsinline="playsinline"
-      autoplay="autoplay"
-      muted="muted"
-      loop="loop"
-      id="portfolioBackgroundVid"
-    >
-      <source src="./assets/imgs/backgroundvid.mov" type="video/mp4" />
-    </video>
+    <!------------------- End Nav Bar -------------------->
 
     <!---------- Start Intro & Skills Container ---------->
     <div id="introContainer">
@@ -109,7 +108,7 @@
     </div>
     <!----------- End Intro & Skills Container ---------->
 
-    <!-- Start of Portfolio Container -->
+    <!----------- Start of Portfolio Container ---------->
     <div class="container" id="portfolioContainer">
       <div class="row">
         <div class="col col-12">
@@ -214,31 +213,23 @@
         </div>
       </div>
     </div>
-    <!-- End of Portfolio Container -->
+    <!-------------- End Portfolio Container ------------->
 
-    <!-- Start of Footer -->
-    <footer>
-      <p>&copy; Copyright 2020 Yi Lin Lee</p>
-    </footer>
-    <!-- End of Footer -->
-
-    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <!-- Bootstrap -->
     <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
       crossorigin="anonymous"
     ></script>
     <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
       crossorigin="anonymous"
     ></script>
-    <!-- Bootstrap JavaScript -->
     <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
       crossorigin="anonymous"
     ></script>
-    <script src="./script.js"></script>
   </body>
 </html>

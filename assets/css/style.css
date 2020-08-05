@@ -1,33 +1,13 @@
 /********************************** STYLING FOR ALL PAGES **********************************/
 
 body {
-  height: 100%;
-  font-family: "Montserrat", sans-serif;
-  color: white;
-  font-size: 16px;
-  position: relative;
-  background-color: rgba(255, 255, 255, 0.01);
   line-height: 1;
-}
-
-a {
-  color: rgb(107, 81, 255);
-  font-weight: bold;
-  flex-direction: row;
-}
-
-#phoneNumber {
-  position: absolute;
-  left: 45px;
-  top: 8px;
-  white-space: nowrap;
-  opacity: 0%;
-}
-
-#phoneIcon {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  background-color: rgb(255, 255, 255);
   position: relative;
+  color: white;
+  font-family: "Montserrat", sans-serif;
 }
 
 video {
@@ -35,35 +15,22 @@ video {
   top: 0;
   min-width: 100%;
   min-height: 100vh;
+  z-index: -2;
+}
+/* 
+#backgroundFilter {
+  position: fixed;
+  width: 120vw;
+  height: 120vh;
+  background-color: rgba(0, 5, 65, 0.74);
   z-index: -1;
-}
-
-#introName {
-  font-weight: 600;
-  font-size: 160px;
-  color: rgb(107, 81, 255);
-  text-shadow: 6px 6px rgb(54, 54, 54);
-  font-family: "Montserrat", sans-serif;
-  font-style: italic;
-}
-
-footer {
-  position: relative;
-  height: 100vh;
-  width: 100vw;
-  display: flex;
-  justify-content: center;
-}
-
-footer p {
-  position: absolute;
-  bottom: 10px;
-}
+} */
 
 /***************** Nav bar *****************/
 .navbar {
   background-color: rgba(81, 98, 255, 0) !important;
   padding: 0.8rem 1rem;
+  font-weight: bold;
 }
 
 #navbar-brand {
@@ -81,6 +48,13 @@ footer p {
   flex-direction: row;
 }
 
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-collapse {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
 .navbar-toggler {
   border: none;
 }
@@ -89,11 +63,23 @@ footer p {
   height: 1em;
 }
 
-@media (min-width: 992px) {
-  .navbar-expand-lg .navbar-collapse {
-    display: flex;
-    justify-content: flex-end;
-  }
+.navbar-nav .nav-link.active {
+  border-bottom: 1px solid black;
+  color: white !important;
+}
+
+.navbar-collapse {
+  padding-top: 10px;
+  font-size: 16px;
+}
+
+.navbar-nav .nav-pages {
+  margin: 0px 0px 0px 7px;
+  padding: 10px 15px;
+  font-size: 18px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: rgba(255, 255, 255, 0.6) !important;
+  border-radius: 20px;
 }
 
 /******* Socials *******/
@@ -106,9 +92,7 @@ footer p {
   margin: 0px 2px;
 }
 
-.socialslink:hover,
-.socialslink:active,
-.socialslink:focus {
+.socialslink:hover {
   text-decoration: none;
 }
 
@@ -122,11 +106,22 @@ footer p {
   padding: 9px 3px 0px 4px;
   border-radius: 20px;
   border: 1px solid black;
-  background-color: #00000096;
+  background-color: rgba(0, 0, 0, 0.8);
   color: white;
 }
 
-/* media queries for nav bar @ xs */
+/*****************************************************************************************/
+/******************************* PAGE AT NAV BAR COLLAPSE ********************************/
+/*****************************************************************************************/
+@media only screen and (max-width: 991px) {
+  .navbar-nav .nav-pages {
+    margin: 4px auto 4px 0;
+  }
+}
+
+/*****************************************************************************************/
+/********************************** PAGE AT XS (MOBILE) **********************************/
+/*****************************************************************************************/
 @media only screen and (max-width: 575px) {
   /***************** Nav bar *****************/
   .navbar {
@@ -138,6 +133,10 @@ footer p {
     margin-right: 0.5rem;
   }
 
+  #socialsDiv {
+    margin-top: 2px;
+  }
+
   .fab,
   .fas {
     height: 35px;
@@ -145,303 +144,9 @@ footer p {
     padding: 6px 3px 0px 3px;
     color: white;
   }
-}
 
-/***************** Containers *****************/
-
-#pageTitle {
-  font-family: "Montserrat", sans-serif;
-  text-shadow: 1px 1px rgb(54, 54, 54);
-  font-size: 50px;
-  border: none;
-  background-color: rgba(255, 255, 255, 0);
-  color: white;
-  margin: 130px 0px 20px 0px;
-}
-
-#pageTitleP {
-  border-bottom: 2px solid white;
-}
-
-.row {
-  display: flex;
-  justify-content: center;
-  margin: 0px;
-  padding: 0px;
-}
-
-.col {
-  display: flex;
-  justify-content: center;
-  margin: 0px;
-  padding: 10px;
-}
-
-#introContainer {
-  padding-top: 80px;
-}
-
-/* media queries for containers @ xs */
-@media only screen and (max-width: 575px) {
-  .container,
-  .col {
-    margin-right: 2px;
-    margin-left: 2px;
-    padding-right: 2px;
-    padding-left: 2px;
-  }
-  #pageTitle {
-    font-size: 30px;
-    margin: 90px 0px 0px 0px;
+  .nav-link.active {
+    text-decoration: underline;
+    border: none;
   }
 }
-
-/********************************** END STYLING FOR ALL PAGES **********************************/
-
-/******************************************** INDEX ********************************************/
-
-/* media queries for page @ over 1600px */
-@media only screen and (min-width: 1600px) {
-  .container {
-    min-width: 90%;
-  }
-}
-
-/* media queries for page @ over 1200px */
-@media (min-width: 1200px) {
-  #portfolioContainer {
-    max-width: 1400px;
-  }
-}
-
-/* media queries for page @ sm */
-@media only screen and (max-width: 767px) {
-  body {
-    font-size: 14px;
-  }
-}
-
-/*********** Intro Skills Div *************/
-
-#introContainer {
-  width: 100%;
-  height: 90vh;
-  margin: 60px 0px 0px 0px;
-}
-
-#introName {
-  font-weight: bold;
-  font-size: 120px;
-  text-align: center;
-  margin: 0px;
-  padding: 20vh 15px 20px 0px;
-  font-family: "Montserrat", sans-serif;
-  font-style: italic;
-  text-shadow: 5px 6px black;
-  -webkit-text-fill-color: white; /* Will override color (regardless of order) */
-  -webkit-text-stroke-width: 4px;
-  -webkit-text-stroke-color: black;
-}
-
-#role {
-  text-align: center;
-  color: white;
-  padding: 0px 15px 0px 0px;
-  text-shadow: 2px 2px black;
-}
-
-#skillsDiv {
-  display: flex;
-  flex-wrap: wrap;
-  max-width: 700px;
-  margin-top: 10vh;
-  padding: 1.5em;
-}
-#skillsDiv p {
-  background-color: rgba(0, 0, 0, 0.6);
-  color: white;
-  display: inline-block;
-  margin: 3px;
-  padding: 0.5em 0.9em;
-  border-radius: 1em;
-}
-
-.row {
-  margin: 0px;
-}
-
-.col {
-  display: flex;
-  justify-content: center;
-}
-
-#portfolioContainer {
-  height: 100vh;
-}
-
-#portfolioTitle,
-#aboutMeTitle {
-  font-family: "Montserrat", sans-serif;
-  font-style: italic;
-  font-weight: bold;
-  text-shadow: 1px 1px rgb(54, 54, 54);
-  font-size: 50px;
-  border: none;
-  -webkit-text-fill-color: white; /* Will override color (regardless of order) */
-  -webkit-text-stroke-width: 2px;
-  -webkit-text-stroke-color: black;
-  margin: 80px 0px 50px 0px;
-  padding-bottom: 15px;
-  border-bottom: 2px solid black;
-}
-
-/* media queries for page @ over 1600px */
-@media only screen and (min-width: 1600px) {
-  .container {
-    min-width: 90%;
-  }
-}
-
-/* media queries for page @ over 1200px */
-@media (min-width: 1200px) {
-  #portfolioContainer {
-    max-width: 1400px;
-  }
-}
-
-/* media queries for page @ sm */
-@media only screen and (max-width: 767px) {
-  body {
-    font-size: 14px;
-  }
-}
-
-/******* Project Cards *******/
-.projectCard {
-  display: flex;
-  flex-direction: column;
-}
-
-.portfolioImg {
-  height: auto;
-  width: 100%;
-}
-
-.projectTitle {
-  font-weight: bold;
-  margin: 20px 0px 0px 0px;
-  border-top: 1px solid white;
-  padding: 5px 0px 5px 0px;
-  color: white;
-  text-shadow: 2px 2px black;
-}
-
-.projectLink {
-  color: white;
-  text-decoration: underline;
-  margin: 5px 0px;
-}
-
-.projectLink:hover,
-.projectLink:active,
-.projectLink:focus {
-  color: rgb(123, 255, 71);
-}
-
-.projectCard a {
-  position: relative;
-}
-.viewApp {
-  position: absolute;
-  top: 0px;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: rgb(0, 0, 0);
-  color: white;
-  opacity: 0%;
-}
-
-.viewApp:hover,
-.viewApp:active,
-.viewApp:focus {
-  opacity: 80%;
-}
-
-.hoverVid {
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  width: 100%;
-}
-
-/****************************************** END INDEX ******************************************/
-
-/******************************************** MORE *********************************************/
-
-#aboutMeImg {
-  float: left;
-  max-width: 200px;
-  margin: 0px 20px 0px 0px;
-}
-
-#aboutMeDesc {
-  border: 2px solid rgba(0, 0, 0, 0.829);
-  border-radius: 20px;
-  padding: 20px;
-  font-size: 18px;
-}
-
-.accentText {
-  color: rgb(148, 255, 138);
-  font-size: 20px;
-  text-shadow: 1px 1px rgb(29, 42, 80);
-}
-
-#resumeDiv {
-  display: flex;
-  justify-content: flex-end;
-}
-
-#resume {
-  text-decoration: underline;
-  background-color: rgba(81, 85, 107, 0.2) !important;
-  padding: 10px;
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
-}
-
-#resume:hover,
-#resume:active,
-#resume:focus,
-#resumeDiv > a:hover,
-#resumeDiv > a:active,
-#resumeDiv > a:focus {
-  color: rgb(123, 255, 71);
-}
-
-/* media queries for page @ xs */
-@media only screen and (max-width: 575px) {
-  #aboutMeImg {
-    max-width: 150px;
-  }
-  #aboutMeDesc {
-    font-size: 12px;
-  }
-  .accentText {
-    font-size: 14px;
-  }
-}
-
-/* media queries for page @ sm */
-@media only screen and (max-width: 767px) {
-  #aboutMeDesc {
-    margin-top: 10px;
-  }
-  .accentText {
-    font-size: 15px;
-  }
-}
-
-/****************************************** END MORE *******************************************/
