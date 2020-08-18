@@ -101,7 +101,31 @@
   color: white;
   opacity: 0%;
 }
-@media (hover: hover) and (pointer: fine) and (any-pointer: coarse) and (any-hover: none) and (hover: none) and (pointer: coarse) {
+@media (hover: hover) and (pointer: fine) {
+  .viewApp:hover {
+    opacity: 80%;
+  }
+}
+
+@media (hover: hover) and (any-pointer: coarse) {
+  .viewApp:hover {
+    opacity: 80%;
+  }
+}
+
+@media (hover: hover) and (any-hover: none) {
+  .viewApp:hover {
+    opacity: 80%;
+  }
+}
+
+@media (hover: hover) and (hover: none) {
+  .viewApp:hover {
+    opacity: 80%;
+  }
+}
+
+@media (hover: hover) and (pointer: coarse) {
   .viewApp:hover {
     opacity: 80%;
   }
