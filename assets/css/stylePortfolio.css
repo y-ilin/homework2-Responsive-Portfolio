@@ -80,7 +80,7 @@
   margin: 5px 0px;
 }
 
-@media (hover: hover) and (any-pointer: coarse) and (any-hover: none) and (hover: none) and (pointer: coarse) {
+@media (hover: hover) and (pointer: fine) and (any-pointer: coarse) and (any-hover: none) and (hover: none) and (pointer: coarse) {
   .projectLink {
     color: rgb(123, 255, 71);
   }
@@ -101,7 +101,7 @@
   color: white;
   opacity: 0%;
 }
-@media (hover: hover) and (any-pointer: coarse) and (any-hover: none) and (hover: none) and (pointer: coarse) {
+@media (hover: hover) and (pointer: fine) and (any-pointer: coarse) and (any-hover: none) and (hover: none) and (pointer: coarse) {
   .viewApp:hover {
     opacity: 80%;
   }
