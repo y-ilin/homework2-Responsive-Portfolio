@@ -127,3 +127,8 @@
     opacity: 80%;
   }
 }
+@media (hover: none) {
+  .viewApp:hover {
+    opacity: 80%;
+  }
+}
