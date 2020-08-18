@@ -106,3 +106,24 @@
     opacity: 80%;
   }
 }
+
+@media (hover: none) and (pointer: coarse) {
+  .viewApp:hover {
+    opacity: 80%;
+  }
+}
+@media (hover: none) and (pointer: fine) {
+  .viewApp:hover {
+    opacity: 80%;
+  }
+}
+@media (any-hover: none) and (pointer: coarse) {
+  .viewApp:hover {
+    opacity: 80%;
+  }
+}
+@media (any-hover: none) and (pointer: fine) {
+  .viewApp:hover {
+    opacity: 80%;
+  }
+}
