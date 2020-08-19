@@ -112,7 +112,7 @@
     opacity: 80%;
   }
 }
-@media (hover: none) and (pointer: fine) {
+/* @media (hover: none) and (pointer: fine) {
   .viewApp:hover {
     opacity: 80%;
   }
@@ -131,4 +131,4 @@
   .viewApp:hover {
     opacity: 80%;
   }
-}
+} */
