@@ -1,4 +1,8 @@
 /******************************** STYLING FOR MORE ON ME PAGE *********************************/
+body {
+  background-color: white;
+}
+
 #aboutMeTitle {
   text-align: center;
   font-family: "Montserrat", sans-serif;
@@ -16,17 +20,61 @@
 #journeyContainer {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   color: black;
-  height: 70vh;
+  height: 80vh;
   margin: 0 0 30vh 0;
+  font-size: 0.8em;
+  color: white;
 }
 
 .journeyStop {
   flex: 1 1 45vw;
   display: flex;
-  justify-content: center;
-  margin: 5px;
-  background-color: rgba(137, 43, 226, 0.541);
+  flex-direction: column;
+  padding: 4vw;
+  position: relative;
+  min-width: 400px;
+}
+
+.journeyStop > p,
+.journeyStop > h4 {
+  position: absolute;
+}
+
+.journeyStop > ul {
+  list-style-type: "✧ ";
+}
+.journeyStop > ul > li {
+  padding: 5px;
+}
+
+#journey1 > h4 {
+  right: 8vw;
+  bottom: 6vw;
+}
+#journey2 > h4 {
+  right: 12vw;
+  bottom: 6vw;
+}
+#journey3 > h4 {
+  text-align: center;
+  width: 100%;
+  bottom: 6vw;
+  font-size: 2.5em;
+}
+#journey3 > ul {
+  font-size: 1.5em;
+}
+
+#journey1 {
+  background-color: rgb(163, 157, 255);
+}
+#journey2 {
+  background-color: rgb(137, 119, 255);
+}
+#journey3 {
+  background-color: rgb(91, 55, 255);
 }
 
 /************** Journey container styling end **************/
@@ -52,8 +100,15 @@
 }
 
 #resumeDiv {
+  position: absolute;
+  bottom: 20vw;
+  left: 6vw;
   display: flex;
   justify-content: flex-end;
+}
+
+#resumeDiv a {
+  color: white;
 }
 
 #resume {
@@ -76,6 +131,8 @@
 @media only screen and (max-width: 575px) {
   #aboutMeTitle {
     font-size: 40px;
+    text-shadow: 4px 4px rgb(123, 255, 71);
+    -webkit-text-stroke-width: 2px;
   }
 
   #aboutMeImg {
