@@ -115,6 +115,8 @@
   #introName {
     font-size: 80px;
     padding: 10vh 0vh;
+    text-shadow: 2px 3px rgb(68, 0, 255), 5px 7px rgb(152, 154, 255),
+      8px 12px white;
   }
 
   .role {
