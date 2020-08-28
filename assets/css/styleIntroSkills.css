@@ -3,15 +3,15 @@
 #introContainer {
   width: 100%;
   height: 100vh;
-  margin: 6vh 0px 0px 0px;
+  margin: 5vh 0px 0px 0px;
 }
 
 #introName {
   font-weight: bold;
-  font-size: 80px;
+  font-size: 120px;
   text-align: center;
   margin: 0px;
-  padding: 10vh 0;
+  padding: 15vh 0;
   font-family: "Montserrat", sans-serif;
   font-style: italic;
   text-shadow: 4px 6px rgb(68, 0, 255);
@@ -24,7 +24,7 @@
   text-align: center;
   color: rgba(68, 0, 255, 0.5);
   padding: 0px 15px 0px 0px;
-  font-size: 1em;
+  font-size: 1.5em;
   font-weight: bold;
   text-shadow: 1px 1px rgb(68, 0, 255);
 }
@@ -38,7 +38,7 @@
 }
 
 .marquee {
-  width: 300px;
+  width: 600px;
   margin: 0 auto;
   white-space: nowrap;
   overflow: hidden;
@@ -48,7 +48,6 @@
 .marquee1 span {
   display: inline-block;
   /* width: fit-content; */
-  /* padding-left: 100%; */
   will-change: transform;
   animation: marquee 6s linear infinite;
 }
@@ -56,15 +55,25 @@
   animation-delay: -6s;
 }
 
-.marquee2 span {
+.marquee2 span,
+.marquee3 span {
   display: inline-block;
   /* width: fit-content; */
-  /* padding-left: 100%; */
   will-change: transform;
   animation: marquee 8s linear infinite;
 }
-.marquee2lead {
+
+.marquee2lead,
+.marquee3lead {
   animation-delay: -4s;
+}
+
+.marquee2 {
+  font-family: "Syncopate", sans-serif;
+  font-size: 1.2em;
+  -webkit-text-fill-color: white;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: rgb(68, 0, 255);
 }
 
 @keyframes marquee {
@@ -108,12 +117,26 @@
     margin-top: 12vh;
     margin-bottom: 15vh;
   } */
+  #introName {
+    font-size: 80px;
+    padding: 10vh 0vh;
+  }
+
+  .role {
+    font-size: 1em;
+  }
+
   #marqueeContainer {
-    width: 100%;
-    /* display: grid;
+    /* width: 100%;
+    display: grid;
     align-items: center; */
     padding: 15vh 0;
   }
+
+  .marquee {
+    width: 300px;
+  }
+
   #skillsDiv p {
     font-size: 14px;
   }

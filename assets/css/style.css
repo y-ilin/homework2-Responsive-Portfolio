@@ -35,6 +35,7 @@ video {
 
 #navbar-brand {
   padding: 0px;
+  margin-right: 0.5rem;
   font-weight: 600;
   font-size: 30px;
   font-style: italic;
@@ -46,6 +47,7 @@ video {
 
 #navbarBrandSocials {
   display: flex;
+  align-items: center;
   flex-direction: row;
 }
 
@@ -64,20 +66,19 @@ video {
   height: 1em;
 }
 
-.navbar-nav .nav-link.active {
-  border-bottom: 1px solid white;
-  color: white;
+.navbar-nav .nav-item.nav-link.nav-pages.active {
+  border-bottom: 1px solid rgb(68, 0, 255);
 }
 
 .navbar-collapse {
   font-size: 14px;
 }
 
-.navbar-nav .nav-pages {
+.navbar-nav .nav-item.nav-link.nav-pages {
   margin: 0px 0px 0px 7px;
-  padding: 10px 15px;
+  padding: 10px 5px;
   font-size: 14px;
-  color: rgba(255, 255, 255, 0.6);
+  color: rgb(68, 0, 255);
 }
 
 /******* Socials *******/
@@ -94,14 +95,26 @@ video {
   text-decoration: none;
 }
 
+.fab.fa-github {
+  font: normal normal normal 24px/1 FontAwesome;
+  margin: 0;
+  /* display: flex;
+  align-items: center; */
+  display: grid;
+  place-items: center;
+}
+
 .fab,
 .fas {
-  display: flex;
-  font: normal normal normal 20px/1 FontAwesome;
+  /* display: flex;
   justify-content: center;
+  align-items: center; */
+  display: grid;
+  place-items: center;
+  font: normal normal normal 20px/1 FontAwesome;
   height: 35px;
   width: 35px;
-  padding: 6px 3px 0px 4px;
+  /* padding: 6px 3px 0px 4px; */
   /* border-radius: 20px;
   border: 1px solid black;
   background-color: rgba(0, 0, 0, 0.8); */
@@ -127,24 +140,24 @@ video {
   }
 
   #navbar-brand {
-    text-shadow: 1px 2px black;
-    margin-right: 0.5rem;
+    text-shadow: 2px 2px rgb(68, 0, 255);
+    font-size: 1.5em;
   }
 
   #socialsDiv {
     margin-top: 2px;
   }
 
-  .fab,
-  .fas {
-    height: 35px;
-    width: 35px;
-    padding: 6px 3px 0px 3px;
-    color: white;
+  .socialslink {
+    padding-bottom: 2px;
   }
 
-  .nav-link.active {
-    text-decoration: underline;
+  .fab,
+  .fas {
+    color: rgb(68, 0, 255);
+  }
+
+  .navbar-nav .nav-item.nav-link.nav-pages.active {
     border: none;
   }
 }
