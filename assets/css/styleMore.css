@@ -3,17 +3,24 @@ body {
   background-color: white;
 }
 
+#pageTitle {
+  text-align: center;
+}
+
 #aboutMeTitle {
+  display: inline-block;
   text-align: center;
   font-family: "Montserrat", sans-serif;
   font-style: italic;
   font-weight: bold;
-  text-shadow: 5px 5px rgb(123, 255, 71);
+  text-shadow: 7px 9px rgb(123, 255, 71);
   font-size: 5em;
+  /* border: none; */
+  transform: skewY(-10deg) scaleX(1.2);
   -webkit-text-fill-color: white; /* Will override color (regardless of order) */
   -webkit-text-stroke-width: 4px;
   -webkit-text-stroke-color: black;
-  margin: 40vh 0px 30vh 0px;
+  margin: 40vh 0px 25vh 0px;
 }
 
 /************* Journey container styling start *************/
@@ -222,7 +229,7 @@ ul#journeyList > li:before {
 /* media queries for page @ xs */
 @media only screen and (max-width: 575px) {
   #aboutMeTitle {
-    font-size: 40px;
+    font-size: 2em;
     text-shadow: 4px 4px rgb(123, 255, 71);
     -webkit-text-stroke-width: 2px;
   }
