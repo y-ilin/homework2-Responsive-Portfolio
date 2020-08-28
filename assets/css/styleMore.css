@@ -13,13 +13,12 @@ body {
   -webkit-text-fill-color: white; /* Will override color (regardless of order) */
   -webkit-text-stroke-width: 4px;
   -webkit-text-stroke-color: black;
-  margin: 40vh 0px 40vh 0px;
+  margin: 40vh 0px 30vh 0px;
 }
 
 /************* Journey container styling start *************/
 
 #journeyContainer {
-  /* background-color: rgb(91, 55, 255); */
   background-image: linear-gradient(
     white,
     rgb(130, 102, 255),
@@ -28,9 +27,10 @@ body {
   );
   position: relative;
   width: 100vw;
-  height: 150vh;
+  height: 170vh;
   color: white;
-  padding-top: 30vh;
+  padding-top: 40vh;
+  font-size: 13px;
 }
 
 .journeyStop {
@@ -50,23 +50,36 @@ body {
 .journeyStopTitle p {
   font-family: "Syncopate", sans-serif;
   font-weight: bold;
-  font-size: 1.5em;
-  /* text-shadow: 2px 1px rgb(0, 0, 0); */
+  font-size: 1.7em;
   -webkit-text-fill-color: rgba(255, 255, 255, 0);
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: white;
   margin: 0;
 }
 
-#journeyWebDev {
-  font-size: 3em;
+#journey3 p {
+  font-size: 3.7em;
+  -webkit-text-stroke-width: 2px;
+}
+
+#journey3 {
+  font-size: 1.2em;
+}
+
+#journey3 li {
+  margin: 20px 0px;
 }
 
 ul#journeyList {
   list-style: none;
 }
 ul#journeyList > li:before {
-  background-color: white;
+  background-image: linear-gradient(
+    rgba(255, 255, 255, 0),
+    white,
+    white,
+    rgba(47, 0, 255, 0)
+  );
   width: 2px;
   content: "";
   position: absolute;
@@ -82,22 +95,28 @@ ul#journeyList > li:before {
   z-index: 1;
 }
 
-#skillsDiv {
-  display: flex;
-  flex-wrap: wrap;
-  max-width: 800px;
-  margin-top: -2vh;
-  margin-bottom: 10vh;
-  padding: 1.5em;
-}
-#skillsDiv p {
-  /* background-color: rgba(0, 0, 0, 0.6); */
-  color: white;
+#resumeDiv {
   display: inline-block;
-  margin: 3px;
-  padding: 0.5em 0.9em;
-  border-radius: 1em;
-  border: 1px solid white;
+}
+
+#resumeDiv a {
+  color: white;
+}
+
+#resumeDiv {
+  text-decoration: underline;
+  background-color: rgba(81, 85, 107, 0.2) !important;
+  padding: 10px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+#resumeDiv:hover,
+#resumeDiv:active,
+#resumeDiv:focus,
+#resumeDiv > a:hover,
+#resumeDiv > a:active,
+#resumeDiv > a:focus {
+  color: rgb(123, 255, 71);
 }
 
 /* #journeyContainer {
@@ -162,6 +181,24 @@ ul#journeyList > li:before {
 
 /************** Journey container styling end **************/
 
+#skillsDiv {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 800px;
+  margin-top: -2vh;
+  margin-bottom: 10vh;
+  padding: 1.5em;
+  font-size: 1.2em;
+}
+#skillsDiv p {
+  color: white;
+  display: inline-block;
+  margin: 3px;
+  padding: 0.5em 0.9em;
+  border-radius: 1em;
+  border: 1px solid white;
+}
+
 /* #aboutMeImg {
   float: left;
   max-width: 200px;
@@ -174,41 +211,12 @@ ul#journeyList > li:before {
   font-size: 18px;
   background-color: rgb(71, 17, 221);
   line-height: 1.2;
-}
+} */
 
 .accentText {
   color: rgb(148, 255, 138);
   font-size: 20px;
-  text-shadow: 1px 1px rgb(255, 94, 1);
-} */
-
-#resumeDiv {
-  /* position: absolute;
-  bottom: 20vw;
-  left: 6vw; */
-  display: flex;
-  justify-content: flex-start;
-  margin-left: 5px;
-}
-
-#resumeDiv a {
-  color: white;
-}
-
-#resume {
-  text-decoration: underline;
-  background-color: rgba(81, 85, 107, 0.2) !important;
-  padding: 10px;
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
-}
-
-#resume:hover,
-#resume:active,
-#resume:focus,
-#resumeDiv > a:hover,
-#resumeDiv > a:active,
-#resumeDiv > a:focus {
-  color: rgb(123, 255, 71);
+  text-shadow: 1px 1px white;
 }
 
 /* media queries for page @ xs */
@@ -219,38 +227,20 @@ ul#journeyList > li:before {
     -webkit-text-stroke-width: 2px;
   }
 
-  #journeyContainer {
-    font-size: 14px;
-  }
-
-  .journeyStopTitle p {
-    font-size: 1.3em;
-    /* text-shadow: 2px 1px rgb(0, 0, 0); */
-    -webkit-text-fill-color: rgba(255, 255, 255, 0);
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: white;
-    margin: 0;
-  }
-
-  #journeyWebDev {
+  #journey3 p {
     font-size: 1.9em;
+    -webkit-text-stroke-width: 1px;
   }
 
-  /* 
-  #aboutMeImg {
+  /* #aboutMeImg {
     max-width: 150px;
   }
   #aboutMeDesc {
     font-size: 14px;
-  }
-  .accentText {
-    font-size: 16px;
-  } */
-
-  #aboutMeDesc {
     margin-top: 15px;
   }
   .accentText {
-    font-size: 17px;
+    font-size: 16px;
   }
+  #aboutMeDesc { */
 }
