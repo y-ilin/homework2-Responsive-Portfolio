@@ -1,23 +1,13 @@
 /*********************************** STYLING FOR PORTFOLIO DIV ********************************/
 
-.row {
-  margin: 0px;
-  justify-content: center;
-}
-
-.col {
-  display: flex;
-  justify-content: center;
-}
-
 #portfolioContainer {
-  height: 100vh;
-  border: 2px solid black;
-  border-radius: 30px;
+  display: grid;
+  grid-template-columns: 50% 50%;
   font-size: 14px;
 }
 
 #portfolioTitle {
+  text-align: center;
   font-family: "Montserrat", sans-serif;
   font-style: italic;
   font-weight: bold;
@@ -29,22 +19,15 @@
   -webkit-text-stroke-color: black;
   margin: 80px 0px 50px 0px;
   padding-bottom: 15px;
-  border-bottom: 2px solid black;
+  /* border-bottom: 2px solid black; */
 }
 
 /* media queries for page @ over 1600px */
-@media only screen and (min-width: 1600px) {
+/* @media only screen and (min-width: 1600px) {
   .container {
     min-width: 90%;
   }
-}
-
-/* media queries for page @ over 1200px */
-@media (min-width: 1200px) {
-  #portfolioContainer {
-    max-width: 1400px;
-  }
-}
+} */
 
 /* media queries for page @ sm */
 /* @media only screen and (max-width: 767px) {
@@ -57,7 +40,12 @@
 .projectCard {
   display: flex;
   flex-direction: column;
+  padding: 4vw;
 }
+/* 
+.portfolioImgLink {
+  margin: 3vw;
+} */
 
 .portfolioImg {
   height: auto;
@@ -80,55 +68,26 @@
   margin: 5px 0px;
 }
 
-@media (hover: hover) and (pointer: fine) {
-  .projectLink {
-    color: rgb(123, 255, 71);
-  }
+.projectLink:hover {
+  color: rgb(123, 255, 71);
 }
 
 .projectCard a {
   position: relative;
 }
+
 .viewApp {
   position: absolute;
   top: 0px;
   width: 100%;
   height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  place-items: center;
   background-color: black;
   color: white;
   opacity: 0%;
 }
-@media (hover: hover) and (pointer: fine) {
-  .viewApp:hover {
-    opacity: 80%;
-  }
-}
 
-@media (hover: none) and (pointer: coarse) {
-  .viewApp:hover {
-    opacity: 80%;
-  }
+.viewApp:hover {
+  opacity: 80%;
 }
-/* @media (hover: none) and (pointer: fine) {
-  .viewApp:hover {
-    opacity: 80%;
-  }
-}
-@media (any-hover: none) and (pointer: coarse) {
-  .viewApp:hover {
-    opacity: 80%;
-  }
-}
-@media (any-hover: none) and (pointer: fine) {
-  .viewApp:hover {
-    opacity: 80%;
-  }
-}
-@media (hover: none) {
-  .viewApp:hover {
-    opacity: 80%;
-  }
-} */

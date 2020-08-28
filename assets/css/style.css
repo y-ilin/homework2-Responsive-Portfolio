@@ -4,7 +4,7 @@ body {
   line-height: 1;
   display: flex;
   flex-direction: column;
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(0, 4, 235);
   position: relative;
   color: white;
   font-family: "Montserrat", sans-serif;
@@ -17,14 +17,13 @@ video {
   min-height: 100vh;
   z-index: -2;
 }
-/* 
-#backgroundFilter {
+
+#backgroundEl {
   position: fixed;
   width: 120vw;
   height: 120vh;
-  background-color: rgba(0, 5, 65, 0.74);
   z-index: -1;
-} */
+}
 
 /***************** Nav bar *****************/
 .navbar {
@@ -34,6 +33,7 @@ video {
 }
 
 #navbar-brand {
+  padding: 0px;
   font-weight: 600;
   font-size: 30px;
   font-style: italic;
@@ -69,7 +69,6 @@ video {
 }
 
 .navbar-collapse {
-  padding-top: 10px;
   font-size: 14px;
 }
 
@@ -101,9 +100,9 @@ video {
   display: flex;
   font: normal normal normal 20px/1 FontAwesome;
   justify-content: center;
-  height: 40px;
-  width: 40px;
-  padding: 9px 3px 0px 4px;
+  height: 35px;
+  width: 35px;
+  padding: 6px 3px 0px 4px;
   border-radius: 20px;
   border: 1px solid black;
   background-color: rgba(0, 0, 0, 0.8);

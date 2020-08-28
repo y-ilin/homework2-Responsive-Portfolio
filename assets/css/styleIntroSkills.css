@@ -8,10 +8,10 @@
 
 #introName {
   font-weight: bold;
-  font-size: 120px;
+  font-size: 80px;
   text-align: center;
   margin: 0px;
-  padding: 28vh 15px 20px 0px;
+  padding: 10vh 0;
   font-family: "Montserrat", sans-serif;
   font-style: italic;
   text-shadow: 5px 6px black;
@@ -20,7 +20,7 @@
   -webkit-text-stroke-color: black;
 }
 
-#role {
+.role {
   text-align: center;
   color: white;
   padding: 0px 15px 0px 0px;
@@ -29,12 +29,61 @@
   text-shadow: 2px 2px black;
 }
 
+/*********** Marquee styling start ***********/
+#marqueeContainer {
+  display: grid;
+  align-items: center;
+  padding: 20vh;
+}
+
+.marquee1,
+.marquee2 {
+  width: 300px;
+  margin: 0 auto;
+  white-space: nowrap;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.marquee1 span {
+  display: inline-block;
+  /* width: fit-content; */
+  /* padding-left: 100%; */
+  will-change: transform;
+  animation: marquee 6s linear infinite;
+}
+.marquee1lead {
+  animation-delay: 3s;
+}
+
+.marquee2 span {
+  display: inline-block;
+  /* width: fit-content; */
+  /* padding-left: 100%; */
+  will-change: transform;
+  animation: marquee 8s linear infinite;
+}
+.marquee2lead {
+  animation-delay: -4s;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-100%, 0);
+  }
+}
+
+/************ Marquee styling end ***********/
+
 #skillsDiv {
   display: flex;
   flex-wrap: wrap;
   max-width: 700px;
-  margin-top: 10vh;
-  margin-bottom: 20vh;
+  margin-top: -2vh;
+  margin-bottom: 10vh;
   padding: 1.5em;
 }
 #skillsDiv p {

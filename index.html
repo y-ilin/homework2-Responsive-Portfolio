@@ -27,9 +27,9 @@
     />
   </head>
   <body>
+    <div id="backgroundEl"></div>
     <!-- Background video -->
-    <div id="backgroundFilter"></div>
-    <video
+    <!-- <video
       playsinline="playsinline"
       autoplay="autoplay"
       muted="muted"
@@ -37,7 +37,7 @@
       id="portfolioBackgroundVid"
     >
       <source src="./assets/imgs/backgroundvid.mov" type="video/mp4" />
-    </video>
+    </video> -->
     <!------------------- START Nav Bar ------------------>
     <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
       <div id="navbarBrandSocials">
@@ -90,8 +90,24 @@
 
     <!---------- Start Intro & Skills Container ---------->
     <div id="introContainer">
-      <div id="introName">YI LIN</div>
-      <div id="role">FULL STACK WEB DEVELOPER</div>
+      <div id="marqueeContainer">
+        <div class="marquee1">
+          <span class="role marquee1lead">BUILDING APPS DRINKING SCHNAPPS</span>
+          <span class="role">BUILDING APPS DRINKING SCHNAPPS</span>
+          <span class="role">BUILDING APPS DRINKING SCHNAPPS</span>
+        </div>
+        <div class="marquee2">
+          <span class="role marquee2lead">WEB DEVELOPER</span>
+          <span class="role">WEB DEVELOPER</span>
+          <span class="role">WEB DEVELOPER</span>
+        </div>
+        <div id="introName">YI LIN</div>
+        <div class="marquee2">
+          <span class="role marquee2lead">FULL STACK WEB DEVELOPER</span>
+          <span class="role">FULL STACK WEB DEVELOPER</span>
+          <span class="role">FULL STACK WEB DEVELOPER</span>
+        </div>
+      </div>
       <div id="skillsDiv">
         <p>JavaScript</p>
         <p>jQuery</p>
@@ -100,6 +116,8 @@
         <p>Node.js</p>
         <p>Express.js</p>
         <p>Responsive Layouts</p>
+        <p>MongoDB</p>
+        <p>NoSQL</p>
         <p>MySQL</p>
         <p>Git</p>
         <p>Heroku</p>
@@ -108,111 +126,163 @@
     <!----------- End Intro & Skills Container ---------->
 
     <!----------- Start of Portfolio Container ---------->
-    <div class="container" id="portfolioContainer">
-      <div class="row">
-        <div class="col col-12">
-          <p id="portfolioTitle">PORTFOLIO</p>
-        </div>
+    <div>
+      <p id="portfolioTitle">PORTFOLIO</p>
+    </div>
+
+    <div id="portfolioContainer">
+      <!-- Whiteboard Sticky app card -->
+      <div class="projectCard">
+        <a
+          href="https://be-redy.herokuapp.com/whiteboard"
+          target="blank"
+          class="portfolioImgLink"
+        >
+          <img
+            src="./assets/imgs/WhiteboardSticky.png"
+            alt="Whiteboard Sticky app screenshot"
+            class="portfolioImg"
+          />
+          <p class="viewApp">Go to app →</p>
+        </a>
+        <p class="projectTitle">TEAM WHITEBOARD</p>
+        <p>Whiteboarding solution for your team's brainstorming sessions.</p>
+        <a
+          href="https://github.com/y-ilin/be-redy"
+          target="blank"
+          class="projectLink"
+          >Link to repo →</a
+        >
       </div>
-      <div class="row">
-        <!-- Weather Dashboard app card -->
-        <div class="col col-12 col-md-6 col-xl-3 projectCard">
-          <a
-            href="https://y-ilin.github.io/Weather-Dashboard/"
-            target="blank"
-            id="1"
-          >
-            <img
-              src="./assets/imgs/WeatherDashboard.png"
-              alt="Weather Dashboard app screenshot"
-              class="portfolioImg"
-            />
-            <p class="viewApp">Go to app →</p>
-          </a>
-          <p class="projectTitle">WEATHER DASHBOARD</p>
-          <p>
-            Search the current and forecasted weather for any city.
-          </p>
-          <a
-            href="https://github.com/y-ilin/Weather-Dashboard"
-            target="blank"
-            class="projectLink"
-            >Link to repo →</a
-          >
-        </div>
-        <!-- Work Day Scheduler app card -->
-        <div class="col col-12 col-md-6 col-xl-3 projectCard">
-          <a
-            href="https://y-ilin.github.io/Work-Day-Scheduler/"
-            target="blank"
-            id="2"
-          >
-            <img
-              src="./assets/imgs/WorkDayScheduler.png"
-              alt="Work Day Scheduler app screenshot"
-              class="portfolioImg"
-            />
-            <p class="viewApp">Go to app →</p>
-          </a>
-          <p class="projectTitle">WORK DAY SCHEDULER</p>
-          <p>
-            Plan out events for each hour of your work day.
-          </p>
-          <a
-            href="https://github.com/y-ilin/Work-Day-Scheduler"
-            target="blank"
-            class="projectLink"
-            >Link to repo →
-          </a>
-        </div>
-        <!-- Personal Fitness Planner app card -->
-        <div class="col col-12 col-md-6 col-xl-3 projectCard">
-          <a
-            href="https://ben-j-st.github.io/projectOne---bootcamp/index.html"
-            target="blank"
-            id="3"
-          >
-            <img
-              src="./assets/imgs/PersonalFitnessPlanner.png"
-              alt="Personal Fitness Planner app screenshot"
-              class="portfolioImg"
-            />
-            <p class="viewApp">Go to app →</p>
-          </a>
-          <p class="projectTitle">PERSONAL FITNESS PLANNER</p>
-          <p>
-            Receive and track your personalized fitness plan based on your
-            preferences.
-          </p>
-          <a
-            href="https://github.com/ben-j-st/projectOne---bootcamp"
-            target="blank"
-            class="projectLink"
-            >Link to repo →
-          </a>
-        </div>
-        <!-- Code Quiz app card -->
-        <div class="col col-12 col-md-6 col-xl-3 projectCard">
-          <a href="https://y-ilin.github.io/Code-Quiz/" target="blank" id="4">
-            <img
-              src="./assets/imgs/CodingQuiz.png"
-              alt="Coding Quiz app screenshot"
-              class="portfolioImg"
-            />
-            <p class="viewApp">Go to app →</p>
-          </a>
-          <p class="projectTitle">CODE QUIZ</p>
-          <p>Multiple-choice question quiz on JavaScript concepts.</p>
-          <a
-            href="https://github.com/y-ilin/Code-Quiz"
-            target="blank"
-            class="projectLink"
-            >Link to repo →
-          </a>
-        </div>
+      <!-- Weather Dashboard app card -->
+      <div class="projectCard">
+        <a
+          href="https://y-ilin.github.io/Weather-Dashboard/"
+          target="blank"
+          class="portfolioImgLink"
+        >
+          <img
+            src="./assets/imgs/WeatherDashboard.png"
+            alt="Weather Dashboard app screenshot"
+            class="portfolioImg"
+          />
+          <p class="viewApp">Go to app →</p>
+        </a>
+        <p class="projectTitle">WEATHER DASHBOARD</p>
+        <p>Search the current and forecasted weather for any city.</p>
+        <a
+          href="https://github.com/y-ilin/Weather-Dashboard"
+          target="blank"
+          class="projectLink"
+          >Link to repo →</a
+        >
+      </div>
+      <!-- Work Day Scheduler app card -->
+      <div class="projectCard">
+        <a
+          href="https://y-ilin.github.io/Work-Day-Scheduler/"
+          target="blank"
+          class="portfolioImgLink"
+        >
+          <img
+            src="./assets/imgs/WorkDayScheduler.png"
+            alt="Work Day Scheduler app screenshot"
+            class="portfolioImg"
+          />
+          <p class="viewApp">Go to app →</p>
+        </a>
+        <p class="projectTitle">WORK DAY SCHEDULER</p>
+        <p>Plan out events for each hour of your work day.</p>
+        <a
+          href="https://github.com/y-ilin/Work-Day-Scheduler"
+          target="blank"
+          class="projectLink"
+          >Link to repo →
+        </a>
+      </div>
+      <!-- Personal Fitness Planner app card -->
+      <div class="projectCard">
+        <a
+          href="https://ben-j-st.github.io/projectOne---bootcamp/index.html"
+          target="blank"
+          class="portfolioImgLink"
+        >
+          <img
+            src="./assets/imgs/PersonalFitnessPlanner.png"
+            alt="Personal Fitness Planner app screenshot"
+            class="portfolioImg"
+          />
+          <p class="viewApp">Go to app →</p>
+        </a>
+        <p class="projectTitle">PERSONAL FITNESS PLANNER</p>
+        <p>
+          Receive and track your personalized fitness plan based on your
+          preferences.
+        </p>
+        <a
+          href="https://github.com/ben-j-st/projectOne---bootcamp"
+          target="blank"
+          class="projectLink"
+          >Link to repo →
+        </a>
+      </div>
+      <!-- Code Quiz app card -->
+      <div class="projectCard">
+        <a
+          href="https://y-ilin.github.io/Code-Quiz/"
+          target="blank"
+          class="portfolioImgLink"
+        >
+          <img
+            src="./assets/imgs/CodingQuiz.png"
+            alt="Coding Quiz app screenshot"
+            class="portfolioImg"
+          />
+          <p class="viewApp">Go to app →</p>
+        </a>
+        <p class="projectTitle">CODE QUIZ</p>
+        <p>Multiple-choice question quiz on JavaScript concepts.</p>
+        <a
+          href="https://github.com/y-ilin/Code-Quiz"
+          target="blank"
+          class="projectLink"
+          >Link to repo →
+        </a>
       </div>
     </div>
     <!-------------- End Portfolio Container ------------->
+    <!-- <script src="/assets/js/three.r119.min.js"></script>
+    <script src="/assets/js/vanta.fog.min.js"></script>
+    <script>
+      VANTA.FOG({
+        el: "#backgroundEl",
+        mouseControls: true,
+        touchControls: true,
+        gyroControls: false,
+        highlightColor: 0x9efff9,
+        midtoneColor: 0x6900ff,
+        lowlightColor: 0xc26eb,
+        baseColor: 0xd2,
+        blurFactor: 0.3,
+        speed: 0.02,
+        zoom: 0.05,
+      });
+    </script> -->
+    <!-- <script>
+      VANTA.FOG({
+        el: "#backgroundEl",
+        mouseControls: true,
+        touchControls: true,
+        gyroControls: false,
+        highlightColor: 0xff5a00,
+        midtoneColor: 0x260afa,
+        lowlightColor: 0xff9500,
+        baseColor: 0xccf,
+        blurFactor: 0.35,
+        speed: 0.2,
+        zoom: 0.8,
+      });
+    </script> -->
 
     <!-- Bootstrap -->
     <script
