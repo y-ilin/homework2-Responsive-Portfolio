@@ -64,7 +64,7 @@ video {
 }
 
 .navbar-nav .nav-link.active {
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid white;
   color: white !important;
 }
 
@@ -76,9 +76,7 @@ video {
   margin: 0px 0px 0px 7px;
   padding: 10px 15px;
   font-size: 14px;
-  background-color: rgba(0, 0, 0, 0.8);
   color: rgba(255, 255, 255, 0.6) !important;
-  border-radius: 20px;
 }
 
 /******* Socials *******/
@@ -103,9 +101,9 @@ video {
   height: 35px;
   width: 35px;
   padding: 6px 3px 0px 4px;
-  border-radius: 20px;
+  /* border-radius: 20px;
   border: 1px solid black;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.8); */
   color: white;
 }
 
