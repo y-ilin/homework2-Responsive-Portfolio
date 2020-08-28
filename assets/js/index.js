@@ -17,7 +17,7 @@ $(document).ready(function() {
             $(".fab, .fas").css("color", "white");
             $(".navbar-nav, .nav-pages").css("color", "white")
         } else {
-            $("body").css("background-color", "white");
+            $("body").css("background-color", "rgb(219, 214, 255)");
             $("#navbar-brand").css("text-shadow", "2px 2px rgb(68, 0, 255)");
             $("#navbar-brand").css("-webkit-text-stroke-color", "rgb(68, 0, 255)");
             $(".fab, .fas").css("color", "rgb(68, 0, 255)");
