@@ -27,6 +27,7 @@ body {
     rgb(47, 0, 255)
   );
   position: relative;
+  width: 100vw;
   height: 150vh;
   color: white;
   padding-top: 30vh;
@@ -217,6 +218,24 @@ ul#journeyList > li:before {
     text-shadow: 4px 4px rgb(123, 255, 71);
     -webkit-text-stroke-width: 2px;
   }
+
+  #journeyContainer {
+    font-size: 14px;
+  }
+
+  .journeyStopTitle p {
+    font-size: 1.3em;
+    /* text-shadow: 2px 1px rgb(0, 0, 0); */
+    -webkit-text-fill-color: rgba(255, 255, 255, 0);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
+    margin: 0;
+  }
+
+  #journeyWebDev {
+    font-size: 1.9em;
+  }
+
   /* 
   #aboutMeImg {
     max-width: 150px;
@@ -227,10 +246,7 @@ ul#journeyList > li:before {
   .accentText {
     font-size: 16px;
   } */
-}
 
-/* media queries for page @ sm */
-@media only screen and (max-width: 767px) {
   #aboutMeDesc {
     margin-top: 15px;
   }
