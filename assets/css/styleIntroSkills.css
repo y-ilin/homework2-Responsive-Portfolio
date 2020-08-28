@@ -14,19 +14,19 @@
   padding: 10vh 0;
   font-family: "Montserrat", sans-serif;
   font-style: italic;
-  text-shadow: 5px 6px black;
+  text-shadow: 4px 6px rgb(68, 0, 255);
   -webkit-text-fill-color: white; /* Will override color (regardless of order) */
   -webkit-text-stroke-width: 4px;
-  -webkit-text-stroke-color: black;
+  -webkit-text-stroke-color: rgb(68, 0, 255);
 }
 
 .role {
   text-align: center;
-  color: white;
+  color: rgba(68, 0, 255, 0.5);
   padding: 0px 15px 0px 0px;
   font-size: 1em;
   font-weight: bold;
-  text-shadow: 2px 2px black;
+  text-shadow: 1px 1px rgb(68, 0, 255);
 }
 
 /*********** Marquee styling start ***********/
@@ -53,7 +53,7 @@
   animation: marquee 6s linear infinite;
 }
 .marquee1lead {
-  animation-delay: 3s;
+  animation-delay: -6s;
 }
 
 .marquee2 span {
@@ -87,13 +87,13 @@
   padding: 1.5em;
 }
 #skillsDiv p {
-  background-color: rgba(0, 0, 0, 0.6);
-  color: white;
+  /* background-color: rgba(0, 0, 0, 0.6); */
+  color: rgb(80, 0, 255);
   display: inline-block;
   margin: 3px;
   padding: 0.5em 0.9em;
   border-radius: 1em;
-  border: 1px solid white;
+  border: 1px solid rgb(80, 0, 255);
 }
 
 /*****************************************************************************************/
