@@ -14,7 +14,10 @@
   padding: 15vh 0;
   font-family: "Montserrat", sans-serif;
   font-style: italic;
-  text-shadow: 4px 6px rgb(68, 0, 255);
+  text-shadow: 4px 5px rgb(68, 0, 255), 7px 9px rgb(152, 154, 255),
+    10px 14px white;
+  /* text-shadow: 4px 6px rgb(68, 0, 255); */
+
   -webkit-text-fill-color: white; /* Will override color (regardless of order) */
   -webkit-text-stroke-width: 4px;
   -webkit-text-stroke-color: rgb(68, 0, 255);
