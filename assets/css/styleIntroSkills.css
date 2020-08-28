@@ -88,12 +88,12 @@
 }
 #skillsDiv p {
   /* background-color: rgba(0, 0, 0, 0.6); */
-  color: rgb(80, 0, 255);
+  color: rgb(111, 40, 255);
   display: inline-block;
   margin: 3px;
   padding: 0.5em 0.9em;
   border-radius: 1em;
-  border: 1px solid rgb(80, 0, 255);
+  border: 1px solid rgb(111, 40, 255);
 }
 
 /*****************************************************************************************/

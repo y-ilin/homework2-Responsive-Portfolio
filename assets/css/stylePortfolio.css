@@ -11,14 +11,13 @@
   font-family: "Montserrat", sans-serif;
   font-style: italic;
   font-weight: bold;
-  text-shadow: 1px 1px rgb(54, 54, 54);
-  font-size: 50px;
-  border: none;
+  text-shadow: 5px 5px rgb(123, 255, 71);
+  font-size: 5em;
+  /* border: none; */
   -webkit-text-fill-color: white; /* Will override color (regardless of order) */
-  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-width: 4px;
   -webkit-text-stroke-color: black;
-  margin: 80px 0px 50px 0px;
-  padding-bottom: 15px;
+  margin: 30vh 0px 50vh 0px;
   /* border-bottom: 2px solid black; */
 }
 
