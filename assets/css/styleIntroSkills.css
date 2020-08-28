@@ -109,32 +109,25 @@
 /********************************** PAGE AT XS (MOBILE) **********************************/
 /*****************************************************************************************/
 @media only screen and (max-width: 575px) {
-  /* #introName {
-    font-size: 80px;
-    padding: 22vh 15px 20px 0px;
-  } */
-  /* #skillsDiv {
-    margin-top: 12vh;
-    margin-bottom: 15vh;
-  } */
   #introName {
     font-size: 80px;
     padding: 10vh 0vh;
   }
 
   .role {
-    font-size: 1em;
+    font-size: 1.1em;
   }
 
   #marqueeContainer {
-    /* width: 100%;
-    display: grid;
-    align-items: center; */
     padding: 15vh 0;
   }
 
   .marquee {
-    width: 300px;
+    width: 350px;
+  }
+
+  .marquee2 {
+    -webkit-text-stroke-width: 1px;
   }
 
   #skillsDiv p {
