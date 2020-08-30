@@ -6,9 +6,9 @@ $(document).ready(function() {
         scroll_pos = $(this).scrollTop();
 
         // When scrolling from intro to portfolio, dynamically change..
-        if(scroll_pos > 1000){
+        if(scroll_pos > 800){
             $("body").css("background-color", "rgb(68, 0, 255)");
-        } else if(scroll_pos > 500) {
+        } else if(scroll_pos > 300) {
             // background color
             $("body").css("background-color", "rgba(145, 133, 255, 0.637)");
             // and navbar colors
