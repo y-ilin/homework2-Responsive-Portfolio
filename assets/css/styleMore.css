@@ -1,6 +1,7 @@
 /******************************** STYLING FOR MORE ON ME PAGE *********************************/
 body {
   background-color: white;
+  position: relative;
 }
 
 #pageTitle {
@@ -13,14 +14,38 @@ body {
   font-family: "Montserrat", sans-serif;
   font-style: italic;
   font-weight: bold;
-  text-shadow: 7px 9px rgb(123, 255, 71);
-  font-size: 5em;
+  text-shadow: 1px 3px white, 3px 5px rgb(123, 255, 71);
+  font-size: 3vw;
   /* border: none; */
-  transform: skewY(-10deg) scaleX(1.2);
-  -webkit-text-fill-color: white; /* Will override color (regardless of order) */
-  -webkit-text-stroke-width: 4px;
+  -webkit-text-fill-color: rgba(
+    255,
+    255,
+    255,
+    0
+  ); /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
-  margin: 40vh 0px 25vh 0px;
+  margin: 40vh 0px 20vh 0px;
+  border-top: 1px solid black;
+  padding: 0.2em 0.2em 0 0.2em;
+  /* transform: skewY(-10deg) scaleX(1.2); */
+  /* border-bottom: 2px solid black; */
+}
+
+#backgroundArrows {
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  height: 100%;
+  width: 100vw;
+  z-index: 1;
+}
+
+#backgroundArrows img {
+  opacity: 2%;
+  width: 100vw;
+  position: absolute;
+  bottom: 40vh;
 }
 
 /************* Journey container styling start *************/
@@ -193,7 +218,6 @@ ul#journeyList > li:before {
   flex-wrap: wrap;
   max-width: 800px;
   margin-top: -2vh;
-  margin-bottom: 10vh;
   padding: 1.5em;
   font-size: 1.2em;
 }
@@ -232,11 +256,17 @@ ul#journeyList > li:before {
     font-size: 2em;
     text-shadow: 4px 4px rgb(123, 255, 71);
     -webkit-text-stroke-width: 2px;
+    margin: 40vh 0px 0vh 0px;
   }
 
   #journey3 p {
     font-size: 1.9em;
     -webkit-text-stroke-width: 1px;
+  }
+
+  #backgroundArrows img {
+    bottom: 80vh;
+    transform: scaleY(1.5);
   }
 
   /* #aboutMeImg {

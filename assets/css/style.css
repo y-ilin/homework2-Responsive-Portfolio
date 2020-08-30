@@ -79,6 +79,7 @@ video {
   padding: 10px 5px;
   font-size: 14px;
   color: rgb(68, 0, 255);
+  width: fit-content;
 }
 
 /******* Socials *******/
