@@ -9,7 +9,7 @@ $(document).ready(function() {
         if(scroll_pos > 500) {
             $("#portfolioTitle").css("opacity", "100%")
             $("body").css("background-color", "rgb(68, 0, 255)");
-            // $("body").css("background-color", "rgb(30, 30, 30)");
+            // $("body").css("background-color", "white");
             $("#navbar-brand").css("text-shadow", "2px 3px white");
             $("#navbar-brand").css("-webkit-text-stroke-color", "black");
             $(".fab, .fas").css("color", "white");

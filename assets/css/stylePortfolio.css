@@ -24,9 +24,9 @@
   font-family: "Open Sans", sans-serif;
   font-weight: bold;
   font-style: italic;
-  -webkit-text-fill-color: rgba(255, 255, 255, 0);
+  -webkit-text-fill-color: rgba(119, 34, 255, 0);
   -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: rgb(150, 150, 150);
+  -webkit-text-stroke-color: rgb(65, 233, 255);
   /* margin: 30vh 0px 50vh 0px; */
   /* transform: scaleY(1.2) skewY(-10deg) rotate(10deg); */
   transition: opacity 0.2s ease, transform 0.5s ease;
@@ -71,7 +71,8 @@
   border-top: 1px solid white;
   padding: 5px 0px 5px 0px;
   color: white;
-  text-shadow: 1px 2px rgb(151, 151, 151);
+  /* text-shadow: 1px 2px rgb(123, 255, 71); */
+  text-shadow: 1px 2px black;
   transform: scaleY(1.2);
 }
 
@@ -79,13 +80,13 @@
   color: white;
   text-decoration: underline;
   margin: 5px 0px 50px 0px;
-  /* width: fit-content; */
   min-width: fit-content;
   max-width: fit-content;
 }
 
 .projectLink:hover {
-  color: rgb(255, 145, 0);
+  /* color: rgb(255, 145, 0); */
+  color: rgb(65, 233, 255);
 }
 
 .projectCard a {
@@ -100,7 +101,7 @@
   display: grid;
   place-items: center;
   background-color: black;
-  color: white;
+  color: black;
   opacity: 0%;
 }
 
