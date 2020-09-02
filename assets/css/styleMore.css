@@ -1,7 +1,6 @@
 /******************************** STYLING FOR MORE ON ME PAGE *********************************/
 body {
   background-color: white;
-  position: relative;
 }
 
 #pageTitle {
@@ -16,7 +15,6 @@ body {
   font-weight: bold;
   text-shadow: 1px 3px white, 3px 5px rgb(123, 255, 71);
   font-size: 3vw;
-  /* border: none; */
   -webkit-text-fill-color: rgba(
     255,
     255,
@@ -28,8 +26,6 @@ body {
   margin: 40vh 0px 20vh 0px;
   border-top: 1px solid black;
   padding: 0.2em 0.2em 0 0.2em;
-  /* transform: skewY(-10deg) scaleX(1.2); */
-  /* border-bottom: 2px solid black; */
 }
 
 #backgroundArrows {
@@ -151,66 +147,6 @@ ul#journeyList > li:before {
   color: rgb(123, 255, 71);
 }
 
-/* #journeyContainer {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  color: black;
-  height: 80vh;
-  margin: 0 0 30vh 0;
-  font-size: 0.8em;
-  color: white;
-}
-
-.journeyStop {
-  flex: 1 1 45vw;
-  display: flex;
-  flex-direction: column;
-  padding: 4vw;
-  position: relative;
-  min-width: 400px;
-}
-
-.journeyStop > p,
-.journeyStop > h4 {
-  position: absolute;
-}
-
-.journeyStop > ul {
-  list-style-type: "✧ ";
-}
-.journeyStop > ul > li {
-  padding: 5px;
-}
-
-#journey1 > h4 {
-  right: 8vw;
-  bottom: 6vw;
-}
-#journey2 > h4 {
-  right: 12vw;
-  bottom: 6vw;
-}
-#journey3 > h4 {
-  text-align: center;
-  width: 100%;
-  bottom: 6vw;
-  font-size: 2.5em;
-}
-#journey3 > ul {
-  font-size: 1.5em;
-}
-
-#journey1 {
-  background-color: rgb(163, 157, 255);
-}
-#journey2 {
-  background-color: rgb(137, 119, 255);
-}
-#journey3 {
-  background-color: rgb(91, 55, 255);
-} */
-
 /************** Journey container styling end **************/
 
 #skillsDiv {
@@ -229,20 +165,6 @@ ul#journeyList > li:before {
   border-radius: 1em;
   border: 1px solid white;
 }
-
-/* #aboutMeImg {
-  float: left;
-  max-width: 200px;
-  margin: 0px 20px 0px 0px;
-}
-
-#aboutMeDesc {
-  color: white;
-  padding: 20px;
-  font-size: 18px;
-  background-color: rgb(71, 17, 221);
-  line-height: 1.2;
-} */
 
 .accentText {
   color: rgb(148, 255, 138);
@@ -268,16 +190,3 @@ ul#journeyList > li:before {
     bottom: 80vh;
     transform: scaleY(1.5);
   }
-
-  /* #aboutMeImg {
-    max-width: 150px;
-  }
-  #aboutMeDesc {
-    font-size: 14px;
-    margin-top: 15px;
-  }
-  .accentText {
-    font-size: 16px;
-  }
-  #aboutMeDesc { */
-}
