@@ -1,0 +1,129 @@
+/***************** Nav bar *****************/
+.navbar {
+  background-color: rgba(81, 98, 255, 0) !important;
+  padding: 0.8rem 1rem;
+  font-weight: bold;
+}
+
+.navbar a {
+  transition: background-color 0.5s ease;
+}
+
+#navbar-brand {
+  padding: 0px;
+  margin-right: 0.5rem;
+  font-weight: 600;
+  font-size: 30px;
+  font-style: italic;
+  text-shadow: 2px 3px rgb(68, 0, 255);
+  /* text-shadow: 2px 3px rgb(123, 255, 71); */
+  -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: rgb(68, 0, 255);
+  /* -webkit-text-stroke-color: black; */
+}
+
+#navbarBrandSocials {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-collapse {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+.navbar-toggler {
+  border: none;
+}
+.navbar-toggler-icon {
+  width: 1em;
+  height: 1em;
+}
+
+.navbar-nav .nav-item.nav-link.nav-pages.active {
+  border-bottom: 1px solid rgb(68, 0, 255);
+}
+
+.navbar-collapse {
+  font-size: 14px;
+}
+
+.navbar-nav .nav-item.nav-link.nav-pages {
+  margin: 0px 0px 0px 7px;
+  padding: 10px 5px;
+  font-size: 14px;
+  color: rgb(68, 0, 255);
+  width: fit-content;
+}
+
+/******* Socials *******/
+#socialsDiv {
+  display: flex;
+  flex-direction: row;
+}
+
+.socialslink {
+  margin: 0px 2px;
+}
+
+.socialslink:hover {
+  text-decoration: none;
+}
+
+.fab.fa-github {
+  font: normal normal normal 24px/1 FontAwesome;
+  margin: 0;
+  /* display: flex;
+    align-items: center; */
+  display: grid;
+  place-items: center;
+}
+
+.fab,
+.fas {
+  display: grid;
+  place-items: center;
+  font: normal normal normal 20px/1 FontAwesome;
+  height: 35px;
+  width: 35px;
+  color: rgb(68, 0, 255);
+}
+
+/*****************************************************************************************/
+/******************************* PAGE AT NAV BAR COLLAPSE ********************************/
+/*****************************************************************************************/
+@media only screen and (max-width: 991px) {
+  .navbar-nav .nav-pages {
+    margin: 4px auto 4px 0;
+  }
+}
+
+/*****************************************************************************************/
+/********************************** PAGE AT XS (MOBILE) **********************************/
+/*****************************************************************************************/
+@media only screen and (max-width: 575px) {
+  /***************** Nav bar *****************/
+  .navbar {
+    padding: 0.5rem;
+  }
+
+  #navbar-brand {
+    font-size: 1.5em;
+  }
+
+  #socialsDiv {
+    margin-top: 2px;
+  }
+
+  .socialslink {
+    padding-bottom: 2px;
+  }
+
+  .navbar-nav .nav-item.nav-link.nav-pages.active {
+    border: none;
+  }
+}

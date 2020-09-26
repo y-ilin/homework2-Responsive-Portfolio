@@ -1,0 +1,184 @@
+/********************************** STYLING FOR INTRO SKILLS DIV **********************************/
+
+/************ Intro upper and lower large text ***********/
+#introLargeText {
+  position: absolute;
+  top: 0px;
+  height: 100vh;
+  width: 100%;
+  white-space: nowrap;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  color: black;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0);
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  font-style: italic;
+  transition: opacity 0.2s ease, transform 0.5s ease;
+  z-index: -1;
+}
+
+#introUpperText {
+  position: absolute;
+  left: -0.1em;
+  top: -0.3em;
+  transform: scaleY(2);
+  font-size: 7.4vw;
+  text-overflow: clip;
+  width: 100vw;
+}
+
+#introLowerText {
+  position: absolute;
+  left: -0.1em;
+  bottom: 0px;
+  transform: scaleY(2);
+  font-size: 13vw;
+  width: 100vw;
+  text-overflow: clip;
+}
+
+/***************** Main intro container *****************/
+#introContainer {
+  width: 100%;
+  height: 100vh;
+  margin: 5vh 0px 0px 0px;
+}
+
+#introName {
+  font-weight: bold;
+  font-size: 120px;
+  text-align: center;
+  margin: 0px;
+  padding: 14vh 0 15vh 0;
+  font-family: "Montserrat", sans-serif;
+  font-style: italic;
+  text-shadow: 4px 5px rgb(68, 0, 255), 7px 9px rgb(152, 154, 255),
+    10px 14px white;
+  /* text-shadow: 4px 1px rgb(0, 0, 0), 7px 1px rgb(123, 255, 71),
+      8px 1px rgb(56, 56, 56); */
+  -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: rgb(68, 0, 255);
+}
+
+.role {
+  text-align: center;
+  color: rgba(68, 0, 255, 0.5);
+  padding: 0px 15px 0px 0px;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-shadow: 1px 1px rgb(68, 0, 255);
+}
+
+/*********** Marquee styling start ***********/
+#marqueeContainer {
+  width: 100%;
+  /* display: grid;
+    align-items: center; */
+  padding: 20vh 0;
+}
+
+.marquee {
+  width: 600px;
+  margin: 0 auto;
+  white-space: nowrap;
+  overflow: hidden;
+  box-sizing: border-box;
+  transition: opacity 0.2s ease, transform 0.5s ease;
+}
+
+.marquee1 span {
+  display: inline-block;
+  /* width: fit-content; */
+  will-change: transform;
+  animation: marquee 6s linear infinite;
+}
+.marquee1lead {
+  animation-delay: -6s;
+}
+
+.marquee2 span,
+.marquee3 span {
+  display: inline-block;
+  /* width: fit-content; */
+  will-change: transform;
+  animation: marquee 8s linear infinite;
+}
+
+.marquee2lead,
+.marquee3lead {
+  animation-delay: -4s;
+}
+
+.marquee2 {
+  font-family: "Syncopate", sans-serif;
+  font-size: 1.2em;
+  -webkit-text-fill-color: white;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: rgb(68, 0, 255);
+}
+
+@keyframes marquee {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-100%, 0);
+  }
+}
+
+/************ Marquee styling end ***********/
+
+/*****************************************************************************************/
+/********************************** PAGE AT XS (MOBILE) **********************************/
+/*****************************************************************************************/
+@media only screen and (max-width: 575px) {
+  /* #introLargeText {
+      overflow: hidden;
+    }
+  
+    #introUpperText {
+      left: -5.5em;
+      top: 12.2em;
+      font-size: 2em;
+      transform: scaleX(2) scaleY(1.6) rotate(-90deg);
+    }
+  
+    #introLowerText {
+      left: 150px;
+      bottom: 8.7em;
+      transform: scaleX(2.5) scaleY(1.86) rotate(-90deg);
+    } */
+
+  #introName {
+    font-size: 80px;
+    /* -webkit-text-stroke-width: 1px;
+      -webkit-text-fill-color: white;
+      text-shadow: 2px 1px rgb(0, 0, 0), 4px 1px rgb(123, 255, 71),
+        5px 1px rgb(56, 56, 56); */
+    padding: 10vh 0vh;
+    text-shadow: 2px 3px rgb(68, 0, 255), 4px 6px rgb(152, 154, 255),
+      6px 10px white;
+  }
+
+  .role {
+    font-size: 1.1em;
+  }
+
+  #marqueeContainer {
+    padding: 15vh 0;
+  }
+
+  .marquee {
+    width: 350px;
+  }
+
+  .marquee2 {
+    -webkit-text-stroke-width: 1px;
+  }
+
+  #skillsDiv p {
+    font-size: 14px;
+  }
+}
