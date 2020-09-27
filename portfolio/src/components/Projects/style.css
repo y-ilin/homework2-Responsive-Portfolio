@@ -24,14 +24,15 @@
   font-family: "Open Sans", sans-serif;
   font-weight: bold;
   font-style: italic;
-  -webkit-text-fill-color: rgba(119, 34, 255, 0);
+  /* -webkit-text-fill-color: rgba(119, 34, 255, 0);
   -webkit-text-stroke-width: 1px;
-  /* -webkit-text-stroke-color: rgb(65, 233, 255); */
-  -webkit-text-stroke-color: rgb(180, 180, 180);
-  /* margin: 30vh 0px 50vh 0px; */
-  /* transform: scaleY(1.2) skewY(-10deg) rotate(10deg); */
+  -webkit-text-stroke-color: rgb(180, 180, 180); */
+  z-index: -1;
   transition: opacity 0.2s ease, transform 0.5s ease;
   opacity: 0%;
+  -webkit-text-fill-color: rgb(23, 23, 23);
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: rgba(180, 180, 180, 0);
 }
 
 /* media queries for page @ over 1600px */
@@ -72,7 +73,6 @@
   border-top: 1px solid white;
   padding: 5px 0px 5px 0px;
   color: white;
-  /* text-shadow: 1px 2px rgb(123, 255, 71); */
   text-shadow: 1px 2px rgb(0, 0, 0);
   transform: scaleY(1.2);
 }
@@ -143,6 +143,5 @@
     top: 1em;
     right: -0.1em;
     font-size: 20vw;
-    transform: scaleY(2) skewY(-10deg) rotate(10deg);
   }
 }
