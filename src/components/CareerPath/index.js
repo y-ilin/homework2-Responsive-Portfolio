@@ -8,6 +8,7 @@ import dataIcon from "../../assets/data-Freepik.svg";
 import startupIcon from "../../assets/startup-Freepik.svg";
 import arrowIcon from "../../assets/right-arrow-Freepik.svg";
 import yilinImg from "../../assets/yilin.jpg";
+import resumeLink from "../../assets/YiLinLeeResume.pdf";
 
 
 function CareerPath() {
@@ -116,12 +117,14 @@ function CareerPath() {
                     Now, I'm applying my <span className="accentText">love for problem-solving </span>
                     along with my <span className="accentText">creative </span> side in web
                     development.
-                </p>  
+                </p>
+                <div id="resumeDiv">
+                    <a href={resumeLink} target="blank">
+                        Download my resume ↓
+                    </a>
+              </div>  
             </div>
-           
         </div>
-
-
 
     </div>
   );

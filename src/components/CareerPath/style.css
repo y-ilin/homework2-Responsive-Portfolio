@@ -126,7 +126,7 @@
 
 /****************** icons div styling end ******************/
 
-/************* Background writeup styling start *************/
+/*************** Background writeup styling ****************/
 #bioDiv {
   width: 90vw;
   max-width: 800px;
@@ -144,29 +144,27 @@
   line-height: 120%;
 }
 
-/************** Background writeup styling end **************/
-
-#skillsDiv {
-  display: flex;
-  flex-wrap: wrap;
-  max-width: 800px;
-  margin-top: -2vh;
-  padding: 1.5em;
-  font-size: 1.2em;
-}
-#skillsDiv p {
-  color: white;
-  display: inline-block;
-  margin: 3px;
-  padding: 0.5em 0.9em;
-  border-radius: 1em;
-  border: 1px solid white;
-}
-
 .accentText {
   color: rgb(148, 255, 138);
   font-size: 20px;
   text-shadow: 1px 1px white;
+}
+
+/***************** Resume button styling ******************/
+
+#resumeDiv {
+  display: inline-block;
+}
+
+#resumeDiv a {
+  color: white;
+}
+
+#resumeDiv {
+  text-decoration: underline;
+  background-color: rgba(81, 85, 107, 0.2) !important;
+  padding: 10px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
 }
 
 /* media queries for page @ xs */
