@@ -1,8 +1,4 @@
 /******************************** STYLING FOR MORE ON ME PAGE *********************************/
-body {
-  background-color: white;
-}
-
 #pageTitle {
   text-align: center;
 }
@@ -28,7 +24,7 @@ body {
   padding: 0.2em 0.2em 0 0.2em;
 }
 
-#backgroundArrows {
+/* #backgroundArrows {
   position: absolute;
   bottom: 0px;
   left: 0;
@@ -37,15 +33,98 @@ body {
   z-index: 1;
 }
 
-#backgroundArrows img {
+#backgroundArrows {
   opacity: 2%;
   width: 100vw;
   position: absolute;
   bottom: 40vh;
+} */
+
+/***************** icons div styling start *****************/
+
+#morePageDiv {
+  background-image: linear-gradient(
+    white,
+    rgb(130, 102, 255),
+    rgb(71, 30, 255),
+    rgb(47, 0, 255)
+  );
+  height: 150vh;
+}
+
+#iconsContainer {
+  display: grid;
+  place-items: center;
+  width: 100vw;
+  z-index: 1;
+  position: absolute;
+  top: 30vh;
+}
+
+#iconsDiv {
+  width: 100%;
+  max-width: 1000px;
+  display: grid;
+  grid-auto-flow: column;
+}
+
+#iconsDiv.vertical {
+  grid-auto-flow: row;
+}
+
+.careerIcons {
+  display: grid;
+  gap: 5px;
+  grid-auto-flow: column;
+  margin: 0 auto;
+  place-items: center;
+  width: fit-content;
+}
+
+.careerLabel {
+  display: grid;
+  place-items: center;
+  margin-top: 30px;
+}
+
+.careerLabel p {
+  text-align: center;
+  /* font-family: "Syncopate", sans-serif; */
+  font-weight: bold;
+  font-size: 1.3em;
+  /* -webkit-text-fill-color: rgba(255, 255, 255, 0);
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white; */
+  width: 100%;
+}
+
+.largerIcon {
+  width: 5em;
+  margin: 2px;
+}
+
+.smallerIcon {
+  width: 3.5em;
+}
+
+.vertical.arrowDiv {
+  display: grid;
+  place-items: center;
+}
+
+.vertical > .arrow {
+  transform: rotate(90deg);
+  margin: 0 auto;
+}
+
+.careerLabel li {
+  list-style-type: "✧ ";
+  margin: 12px 0px;
+  line-height: 130%;
 }
 
 /************* Journey container styling start *************/
-
+/* 
 #journeyContainer {
   background-image: linear-gradient(
     white,
@@ -145,7 +224,7 @@ ul#journeyList > li:before {
 #resumeDiv > a:active,
 #resumeDiv > a:focus {
   color: rgb(123, 255, 71);
-}
+} */
 
 /************** Journey container styling end **************/
 
@@ -181,7 +260,7 @@ ul#journeyList > li:before {
     margin: 40vh 0px 0vh 0px;
   }
 
-  #journey3 p {
+  /* #journey3 p {
     font-size: 1.9em;
     -webkit-text-stroke-width: 1px;
   }
@@ -189,5 +268,13 @@ ul#journeyList > li:before {
   #backgroundArrows img {
     bottom: 80vh;
     transform: scaleY(1.5);
+  } */
+}
+
+/* media queries for page @ md */
+@media only screen and (max-width: 991px) {
+  .arrow {
+    color: red;
+    transform: rotate(90);
   }
 }
