@@ -18,9 +18,9 @@ function IntroBanner(props) {
     <div id="introContainer">
       <div id="marqueeContainer">
         <div className="marquee marquee1" style={marqueeStyle}>
-          <span className="role marquee1lead">BUILDING APPS DRINKING SCHNAPPS</span>
-          <span className="role">BUILDING APPS DRINKING SCHNAPPS</span>
-          <span className="role">BUILDING APPS DRINKING SCHNAPPS</span>
+          <span className="role marquee1lead">FULL STACK WEB DEVELOPER</span>
+          <span className="role">FULL STACK WEB DEVELOPER</span>
+          <span className="role">FULL STACK WEB DEVELOPER</span>
         </div>
         <div className="marquee marquee2" style={marqueeStyle}>
           <span className="role marquee2lead">WEB DEVElOPER</span>
