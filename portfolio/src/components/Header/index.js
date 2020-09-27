@@ -4,7 +4,6 @@ import "./style.css";
 
 function Header(props) {
   const scrollTop = props.scrollTop;
-  console.log(scrollTop)
   const [scrollClass, setScrollClass] = useState(0);
   
   useEffect(() => {

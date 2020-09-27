@@ -72,7 +72,6 @@ function Projects(props) {
 
     // Fading in the "My Work" title when you scroll down
     useEffect(() => {
-        console.log(scrollTop)
         if (scrollTop > 500) {
             setPortfolioTitleStyle({opacity: "100%"});
         } else if (scrollTop > 100) {
