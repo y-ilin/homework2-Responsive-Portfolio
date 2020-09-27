@@ -1,0 +1,14 @@
+.projectLinkBadgeDiv {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.projectLinkBadgeDiv > p {
+  color: white;
+  display: inline-block;
+  margin: 3px;
+  padding: 0.4em 0.7em;
+  border-radius: 1em;
+  border: 1px solid white;
+  white-space: nowrap;
+}
