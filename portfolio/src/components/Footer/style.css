@@ -1,0 +1,17 @@
+.footer {
+  display: grid;
+  place-items: center;
+  margin-top: 30vh;
+  font-size: 0.8em;
+}
+
+.footerCredit {
+  position: absolute;
+  right: 10px;
+  font-size: 0.6em;
+  color: rgb(135, 131, 149);
+}
+
+.footerCredit.noshow {
+  opacity: 0%;
+}
