@@ -1,7 +1,8 @@
-import React, { useContext, useEffect } from "react";
+import React from "react";
 import Header from "../components/Header";
 import IntroBanner from "../components/IntroBanner";
 import Projects from "../components/Projects";
+import Footer from "../components/Footer";
 
 function Portfolio(props) {
     const scrollTop = props.scrollTop;
@@ -17,9 +18,12 @@ function Portfolio(props) {
         
     return (
         <div>
-            <Header />
-            <IntroBanner />
-            <Projects />
+            <Header scrollTop={scrollTop}/>
+            <IntroBanner scrollTop={scrollTop}/>
+            <Projects scrollTop={scrollTop}/>
+            <Footer 
+                page="Portfolio"
+            />
         </div>
 
     );

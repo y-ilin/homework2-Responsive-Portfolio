@@ -1,30 +1,44 @@
-import React from "react";
+import React, { useEffect, useState }from "react";
 import { Link } from "react-router-dom";
 import "./style.css";
 
-function Header() {
+function Header(props) {
+  const scrollTop = props.scrollTop;
+  console.log(scrollTop)
+  const [scrollClass, setScrollClass] = useState(0);
+  
+  useEffect(() => {
+    if (scrollTop > 500) {
+      setScrollClass("scroll500");
+    } else if (scrollTop > 300) {
+      setScrollClass("scroll300");
+    }  else if (scrollTop > 100) {
+      setScrollClass("scroll100");
+    }
+  }, [scrollTop]);
+
   
   return (
     <div>
       <nav className="navbar fixed-top navbar-expand-lg navbar-light bg-light">
         <div id="navbarBrandSocials">
-          <a id="navbar-brand" href="./index.html">YI LIN LEE</a>
+          <a id="navbar-brand" href="./index.html" className={scrollClass}>YI LIN LEE</a>
           {/* Socials */}
           <div id="socialsDiv">
             <a href="https://github.com/y-ilin" target="blank" className="socialslink"
-              ><i className="fab fa-github"></i
+              ><i className={scrollClass + " fab fa-github"}></i
             ></a>
             <a
               href="https://www.linkedin.com/in/yi-lin-lee/"
               target="blank"
               className="socialslink"
-              ><i className="fab fa-linkedin"></i
+              ><i className={scrollClass + " fab fa-linkedin"}></i
             ></a>
             <a
               href="mailto:yilinlee19@gmail.com"
               target="blank"
               className="socialslink"
-              ><i className="fas fa-envelope"></i
+              ><i className={scrollClass + " fas fa-envelope"}></i
             ></a>
           </div>
         </div>
@@ -41,7 +55,7 @@ function Header() {
           <span className="navbar-toggler-icon"></span>
         </button>
         <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div className="navbar-nav">
+          <div className={scrollClass + " navbar-nav"}>
             <Link
               to="/"
               className={

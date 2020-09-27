@@ -1,19 +1,22 @@
 import React from "react";
 import Header from "../components/Header";
 import CareerPath from "../components/CareerPath";
-// import Skills from "../components/Skills";
+import Footer from "../components/Footer";
 
-function Portfolio() {
-  
+function More(props) {
+    const scrollTop = props.scrollTop;
+
     return (
-        <div>
-            <Header />
+        <div className="morePage">
+            <Header scrollTop={scrollTop}/>
             <CareerPath />
-            {/* <Skills /> */}
+            <Footer 
+                page="More"
+            />
         </div>
 
     );
   }
 
 
-export default Portfolio;
+export default More;

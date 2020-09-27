@@ -13,7 +13,6 @@ function App() {
 
     window.addEventListener("scroll", onScroll);
 
-
     return () => window.removeEventListener("scroll", onScroll);
   }, [scrollTop]);
 
@@ -26,10 +25,10 @@ function App() {
             <Portfolio scrollTop={scrollTop}/>
           </Route>
           <Route exact path="/more">
-            <More />
+            <More scrollTop={scrollTop}/>
           </Route>
           <Route path="*">
-            <Portfolio />
+            <Portfolio scrollTop={scrollTop}/>
           </Route>
         </Switch>
       </div>

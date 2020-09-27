@@ -23,6 +23,21 @@
   /* -webkit-text-stroke-color: black; */
 }
 
+#navbar-brand.scroll500 {
+  text-shadow: 2px 3px white;
+  -webkit-text-stroke-color: black;
+}
+
+#navbar-brand.scroll300 {
+  text-shadow: 2px 3px rgb(68, 0, 255);
+  -webkit-text-stroke-color: rgb(68, 0, 255);
+}
+
+#navbar-brand.scroll100 {
+  text-shadow: 2px 3px rgb(68, 0, 255);
+  -webkit-text-stroke-color: rgb(68, 0, 255);
+}
+
 #navbarBrandSocials {
   display: flex;
   align-items: center;
@@ -60,6 +75,14 @@
   width: fit-content;
 }
 
+.scroll500 > .nav-item.nav-link.nav-pages {
+  color: white !important;
+}
+
+.scroll500 > .nav-item.nav-link.nav-pages.active {
+  border-bottom: 1px solid white;
+}
+
 /******* Socials *******/
 #socialsDiv {
   display: flex;
@@ -90,6 +113,21 @@
   font: normal normal normal 20px/1 FontAwesome;
   height: 35px;
   width: 35px;
+  color: rgb(68, 0, 255);
+}
+
+.fab.scroll500,
+.fas.scroll500 {
+  color: white;
+}
+
+.fab.scroll300,
+.fas.scroll300 {
+  color: rgb(68, 0, 255);
+}
+
+.fab.scroll100,
+.fas.scroll100 {
   color: rgb(68, 0, 255);
 }
 
