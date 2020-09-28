@@ -151,6 +151,16 @@
 
   #navbar-brand {
     font-size: 1.5em;
+    text-shadow: 2px 2px rgb(68, 0, 255);
+  }
+  #navbar-brand.scroll500 {
+    text-shadow: 2px 2px white;
+  }
+  #navbar-brand.scroll300 {
+    text-shadow: 2px 2px rgb(68, 0, 255);
+  }
+  #navbar-brand.scroll100 {
+    text-shadow: 2px 2px rgb(68, 0, 255);
   }
 
   #socialsDiv {
@@ -159,9 +169,5 @@
 
   .socialslink {
     padding-bottom: 2px;
-  }
-
-  .navbar-nav .nav-item.nav-link.nav-pages.active {
-    border: none;
   }
 }
