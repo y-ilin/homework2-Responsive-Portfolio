@@ -2,10 +2,10 @@ import React, { useEffect, useState } from "react";
 import "./style.css";
 import Project from "../Project";
 import whiteboardStickyImg from "../../assets/WhiteboardSticky.png";
+import googleBooksSearchImg from "../../assets/GoogleBooksSearch.png";
+import onlineOfflineBudgetTrackerImg from "../../assets/OnlineOfflineBudgetTracker.png";
 import weatherDashboardImg from "../../assets/WeatherDashboard.png";
 import pfpImg from "../../assets/PersonalFitnessPlanner.png";
-import workDaySchedulerImg from "../../assets/WorkDayScheduler.png";
-import codingQuizImg from "../../assets/CodingQuiz.png";
 import burgerImg from "../../assets/Burger.png";
 
 const projectArray = [
@@ -19,13 +19,13 @@ const projectArray = [
      skills: ["Node.js", "Express.js", "Handlebars", "MySQL", "ORM"],
     },
     {
-     deployedLink: "https://y-ilin.github.io/Weather-Dashboard/",
-     img: weatherDashboardImg,
-     imgAlt: "Weather Dashboard app screenshot",
-     projectTitle: "WEATHER DASHBOARD",
-     projectDescription: "Search the current and forecasted weather for any city.",
-     githubLink: "https://github.com/y-ilin/Weather-Dashboard",
-     skills: ["jQuery", "Responsive Layout", "Third Party API", "Local Storage"],
+     deployedLink: "https://infinite-wildwood-82416.herokuapp.com/",
+     img: googleBooksSearchImg,
+     imgAlt: "Google Books Search app screenshot",
+     projectTitle: "GOOGLE BOOKS SEARCH",
+     projectDescription: "Search for books and save them for later",
+     githubLink: "https://github.com/y-ilin/Google-Books-React-Search",
+     skills: ["React", "Node.js", "Express.js", "MongoDB", "Mongoose"],
     },
     {
      deployedLink: "https://ben-j-st.github.io/projectOne---bootcamp/index.html",
@@ -37,22 +37,22 @@ const projectArray = [
      skills: ["jQuery", "Foundation CSS Framework", "API"],
     },
     {
-     deployedLink: "https://y-ilin.github.io/Work-Day-Scheduler/",
-     img: workDaySchedulerImg,
-     imgAlt: "Work Day Scheduler app screenshot",
-     projectTitle: "WORK DAY SCHEDULER",
-     projectDescription: "Plan out events for each hour of your work day.",
-     githubLink: "https://github.com/y-ilin/Work-Day-Scheduler",
-     skills: ["Moment.js", "jQuery", "HTML", "CSS"],
+     deployedLink: "https://safe-dusk-75030.herokuapp.com/",
+     img: onlineOfflineBudgetTrackerImg,
+     imgAlt: "Online-offline Budget Tracker app screenshot",
+     projectTitle: "ONLINE-OFFLINE BUDGET TRACKER",
+     projectDescription: "Track your budget even when you have no access to the internet",
+     githubLink: "https://github.com/y-ilin/Online-Offline-Budget-Tracker",
+     skills: ["indexedDB", "ServiceWorker", "Webmanifest", "MongoDB", "Mongoose"],
     },
     {
-     deployedLink: "https://y-ilin.github.io/Code-Quiz/",
-     img: codingQuizImg,
-     imgAlt: "Coding Quiz app screenshot",
-     projectTitle: "CODE QUIZ",
-     projectDescription: "Multiple-choice question quiz on JavaScript concepts.",
-     githubLink: "https://github.com/y-ilin/Code-Quiz",
-     skills: ["jQuery", "Local Storage"],
+     deployedLink: "https://y-ilin.github.io/Weather-Dashboard/",
+     img: weatherDashboardImg,
+     imgAlt: "Weather Dashboard app screenshot",
+     projectTitle: "WEATHER DASHBOARD",
+     projectDescription: "Search the current and forecasted weather for any city.",
+     githubLink: "https://github.com/y-ilin/Weather-Dashboard",
+     skills: ["jQuery", "Responsive Layout", "Third Party API", "Local Storage"],
     },
     {
      deployedLink: "https://damp-lowlands-67480.herokuapp.com/",
