@@ -1,8 +1,22 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./style.css";
 import ProjectBadges from "../ProjectBadges";
 
 function Project(props) {
+    // const [isShown, setIsShown] = useState(false);
+
+    // useEffect(() => {
+    //     if (isShown) {
+    //         console.log(this)
+    //     }
+    // }, [isShown])
+    const toggleOpacityUp = e => {
+        e.target.style.opacity = "80%";
+    }
+
+    const toggleOpacityDown = e => {
+        e.target.style.opacity = "0%";
+    }
 
     return (
         <div className="projectCard">
@@ -16,7 +30,12 @@ function Project(props) {
                 alt={props.imgAlt}
                 className="portfolioImg"
             />
-            <p className="viewApp">Go to app →</p>
+            <p className="viewApp"
+                // onMouseEnter={() => setIsShown(true)}
+                // onMouseLeave={() => setIsShown(false)}
+                onMouseEnter={toggleOpacityUp}
+                onMouseLeave={toggleOpacityDown}
+            >Go to app →</p>
             </a>
             <p className="projectTitle">{props.projectTitle}</p>
             <p>{props.projectDescription}</p>
