@@ -1,15 +1,10 @@
-import React, { useState, useEffect } from "react";
-import "./style.css";
-import ProjectBadges from "../ProjectBadges";
+import React from "react";
 
-function Project(props) {
-    // const [isShown, setIsShown] = useState(false);
+import ProjectBadges from "../ProjectBadges/ProjectBadges";
 
-    // useEffect(() => {
-    //     if (isShown) {
-    //         console.log(this)
-    //     }
-    // }, [isShown])
+import "./ProjectCard.scss";
+
+function ProjectCard(props) {
     const toggleOpacityUp = e => {
         e.target.style.opacity = "80%";
     }
@@ -19,30 +14,28 @@ function Project(props) {
     }
 
     return (
-        <div className="projectCard">
+        <div className="main-container__project-card">
             <a
             href={props.deployedLink}
             target="blank"
-            className="portfolioImgLink"
+            className="portfolio-img-link"
             >
             <img
                 src={props.img}
                 alt={props.imgAlt}
-                className="portfolioImg"
+                className="portfolio-img"
             />
-            <p className="viewApp"
-                // onMouseEnter={() => setIsShown(true)}
-                // onMouseLeave={() => setIsShown(false)}
+            <p className="project-card__view-app"
                 onMouseEnter={toggleOpacityUp}
                 onMouseLeave={toggleOpacityDown}
             >Go to app →</p>
             </a>
-            <p className="projectTitle">{props.projectTitle}</p>
+            <p className="project-title">{props.projectTitle}</p>
             <p>{props.projectDescription}</p>
             <a
                 href={props.githubLink}
                 target="blank"
-                className="projectLink"
+                className="project-link"
                 >Link to repo →</a
             >
             <ProjectBadges 
@@ -55,4 +48,4 @@ function Project(props) {
 }
 
 
-export default Project;
+export default ProjectCard;

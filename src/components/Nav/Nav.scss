@@ -1,0 +1,35 @@
+.nav-container {
+  display: flex;
+  margin: 2vh 2vw;
+  align-items: center;
+  justify-content: space-between;
+
+  .name {
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-shadow: 2px 2px #40f, 3px 3px #a298ff;
+    padding-bottom: 3px;
+    letter-spacing: 0.1rem;
+    text-decoration: none;
+  }
+
+  .nav-container__left-div {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+
+    a {
+      padding: 0;
+    }
+  }
+
+  .nav-container__right-div {
+    display: flex;
+    gap: 15px;
+
+    a {
+      text-decoration: none;
+      padding-bottom: 4px;
+    }
+  }
+}

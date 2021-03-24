@@ -1,0 +1,32 @@
+.home__main-container {
+  display: flex;
+  flex-direction: column;
+  margin: 20vh 10vw;
+
+  * {
+    margin: 10px 0;
+  }
+
+  .name {
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-shadow: 2px 2px #40f, 3px 3px #a298ff;
+    padding-bottom: 3px;
+    letter-spacing: 0.1rem;
+  }
+
+  .role {
+    font-size: 1.3rem;
+  }
+
+  .link {
+    text-decoration: none;
+    width: fit-content;
+    padding-bottom: 5px;
+    border-bottom: 1px solid;
+  }
+
+  .paragraph {
+    padding-top: 20px;
+  }
+}

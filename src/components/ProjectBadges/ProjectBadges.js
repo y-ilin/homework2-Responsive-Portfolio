@@ -1,15 +1,15 @@
 import React from "react";
-import "./style.css";
+
+import "./ProjectBadges.scss";
 
 function ProjectBadges(props) {
 
     const skillsArray = props.skills;
 
     return (
-    <div className="projectLinkBadgeDiv">
+    <div className="project-badge__main-container">
         {skillsArray.map(skill => {
-            return <p key={skill}
-            >{skill}</p>
+            return <p key={skill}>{skill}</p>
         })}
 
     </div>

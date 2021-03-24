@@ -1,0 +1,30 @@
+.about__main-container {
+  margin: 10vh 10vw;
+
+  tr {
+    display: flex;
+    flex-direction: column;
+
+    td {
+      margin: 20px 0;
+    }
+
+    ul {
+      margin: 0 30px;
+      opacity: 0;
+      transition: opacity 0.5s;
+
+      &:hover {
+        opacity: 1;
+        transition: opacity 0.2s;
+      }
+
+      li {
+        font-size: 0.8rem;
+        list-style-type: "✧ ";
+        margin: 0 0 10px 30px;
+        opacity: 0.5;
+      }
+    }
+  }
+}

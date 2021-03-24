@@ -1,34 +1,26 @@
-import React, { useEffect, useState } from 'react';
-import './App.css';
+import React from 'react';
 import { BrowserRouter, Route, Switch } from "react-router-dom";
-import Portfolio from "./pages/Portfolio";
-import More from "./pages/More";
+import Home from "./pages/Home";
+import Work from "./pages/Work";
+import About from "./pages/About";
 
 function App() {
-  const [scrollTop, setScrollTop] = useState(0);
-  useEffect(() => {
-    const onScroll = e => {
-      setScrollTop(e.target.documentElement.scrollTop);
-    };
-
-    window.addEventListener("scroll", onScroll);
-
-    return () => window.removeEventListener("scroll", onScroll);
-  }, [scrollTop]);
 
   return (
       <BrowserRouter>
-      <div>
-        {/* <Nav /> */}
+      <div className="app-div">
         <Switch>
           <Route exact path="/">
-            <Portfolio scrollTop={scrollTop}/>
+            <Home />
           </Route>
-          <Route exact path="/more">
-            <More scrollTop={scrollTop}/>
+            <Route exact path="/work">
+            <Work />
+             </Route>
+          <Route exact path="/about">
+            <About />
           </Route>
           <Route path="*">
-            <Portfolio scrollTop={scrollTop}/>
+            <Home />
           </Route>
         </Switch>
       </div>

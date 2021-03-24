@@ -1,0 +1,22 @@
+.work__main-container {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  margin: 10vh 3vw;
+}
+
+/* media queries for page @ 1000px */
+@media only screen and (max-width: 1000px) {
+  .work__main-container {
+    display: grid;
+    grid-template-columns: 100%;
+    margin-top: 10vh;
+  }
+}
+// /* media queries for page @ xs */
+// @media only screen and (max-width: 575px) {
+//   #portfolioTitle {
+//     top: 1em;
+//     right: -0.1em;
+//     font-size: 20vw;
+//   }
+// }

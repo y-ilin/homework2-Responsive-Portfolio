@@ -1,0 +1,17 @@
+.project-badge__main-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+
+  p {
+    font-size: 0.8rem;
+    color: white;
+    display: inline-block;
+    margin: 3px;
+    padding: 0.3em 0.6em;
+    border-radius: 1em;
+    border: 1px solid white;
+    white-space: nowrap;
+  }
+}
